@@ -389,6 +389,7 @@ textarea {
 
 .product-card h3,
 .article-card h2,
+.article-card h3,
 .trust-grid h3 {
   margin: 0;
   line-height: 1.15;
@@ -397,11 +398,16 @@ textarea {
 
 .product-card p,
 .article-card p,
+.article-card li,
 .feature-panel p,
 .trust-grid p,
 .prose p,
 .prose li {
   color: var(--muted);
+}
+
+.article-card h4 {
+  margin: 0.85rem 0 0.25rem;
 }
 
 .meta-row,

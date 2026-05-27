@@ -106,13 +106,23 @@
     if (!product.topPicks || !product.topPicks.length) return "";
     return `
       <h2>Top picks</h2>
+      ${product.selectionNote ? `<div class="disclosure-banner">${escapeHtml(product.selectionNote)}</div>` : ""}
       <div class="article-grid">
         ${product.topPicks.map((pick) => `
           <article class="article-card">
-            <p class="eyebrow">${escapeHtml(pick.slot || "Pick")}</p>
-            <h3>${escapeHtml(pick.name)}</h3>
+            <p class="eyebrow">${escapeHtml(pick.pickLabel || pick.slot || "Pick")}</p>
+            <h3>${escapeHtml(pick.productName || pick.name)}</h3>
+            ${pick.slotStatus ? `<p><strong>Status:</strong> ${escapeHtml(pick.slotStatus)}</p>` : ""}
             <p>${escapeHtml(pick.why)}</p>
-            <p><strong>Watch out:</strong> ${escapeHtml(pick.watchOut || "Verify current specs, fit, and return policy before buying.")}</p>
+            <p><strong>Best for:</strong> ${escapeHtml(pick.bestFor || "TODO - define best use case.")}</p>
+            <p><strong>Avoid if:</strong> ${escapeHtml(pick.avoidIf || pick.watchOut || "Verify current specs, fit, and return policy before buying.")}</p>
+            <p><strong>Official URL:</strong> ${pick.officialProductUrl && !pick.officialProductUrl.startsWith("TODO") ? `<a href="${escapeHtml(pick.officialProductUrl)}" rel="noopener" target="_blank">${escapeHtml(pick.officialProductUrl)}</a>` : "TODO - add official product URL"}</p>
+            <p><strong>ASIN:</strong> ${escapeHtml(pick.asin || "TODO")}</p>
+            <p><strong>Last checked:</strong> ${escapeHtml(pick.lastCheckedDate || product.lastCheckedDate)}</p>
+            <h4>Pros</h4>
+            <ul>${renderList(pick.pros)}</ul>
+            <h4>Cons</h4>
+            <ul>${renderList(pick.cons)}</ul>
             <div class="affiliate-actions">
               <a class="button secondary" href="${escapeHtml(pick.affiliateUrl || product.affiliateUrl)}" rel="nofollow sponsored noopener" target="_blank">Check current price</a>
             </div>
@@ -173,7 +183,9 @@
           <span class="meta-pill">Last checked ${escapeHtml(product.lastCheckedDate)}</span>
           <span class="meta-pill">Updated ${escapeHtml(product.dateUpdated)}</span>
           <span class="meta-pill">${escapeHtml(product.category)}</span>
+          <span class="meta-pill">${product.readyForAffiliateLinks ? "Ready for affiliate links" : "Affiliate prep needed"}</span>
         </div>
+        ${product.productSelectionStatus === "manual-selection-needed" ? `<div class="disclosure-banner">Manual Product Selection Needed: exact products, official links, ASINs, approved images, and affiliate links still need to be finalized before monetization.</div>` : ""}
         <h2>Quick take</h2>
         <p>${escapeHtml(product.quickVerdict || product.finalTake)}</p>
         <h2>Goblin read</h2>
@@ -269,7 +281,7 @@
 
     let products = [];
     try {
-      const response = await fetch(`${root}data/products.json?v=20260527-3`, { cache: "no-store" });
+      const response = await fetch(`${root}data/products.json?v=20260527-4`, { cache: "no-store" });
       products = await response.json();
     } catch (error) {
       targets.forEach((target) => {

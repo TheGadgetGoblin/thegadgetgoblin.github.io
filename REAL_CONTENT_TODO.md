@@ -1,70 +1,70 @@
 # Real Content TODO
 
-Use this checklist before treating the first five Gadget Goblin guides as final monetized articles.
+Current state: the first five buyer guides are published as research-based drafts. They are useful, but not monetization-ready. The next milestone is one fully cleaned-up guide with exact product picks.
 
-## Global
+## Global Checklist
 
-- [ ] Replace Amazon search URLs with approved affiliate links after account approval.
-- [ ] Add real `asin` values only after choosing exact products.
-- [ ] Add official product pages for each final pick.
-- [ ] Add allowed product images from approved API responses, manufacturer media permissions, or original photos.
-- [ ] Re-check every article's `lastCheckedDate` before publishing affiliate links.
-- [ ] Review Affiliate Disclosure and Privacy Policy before applying to programs.
-- [ ] Add a real contact method or working form provider.
-- [ ] Confirm no article claims hands-on testing unless testing actually happened.
+- [ ] Choose exact products for each top-pick slot.
+- [ ] Replace every `Product slot - final model needed` status.
+- [ ] Add manufacturer/brand official product URLs.
+- [ ] Add verified ASINs only for exact Amazon listings.
+- [ ] Replace Amazon search URLs with approved affiliate links after approval.
+- [ ] Add allowed product images from approved API responses, manufacturer permission, or original photos.
+- [ ] Add or verify source URLs for every product-specific claim.
+- [ ] Update `lastCheckedDate` after checking links, specs, and claims.
+- [ ] Set `readyForAffiliateLinks` to `true` only after a guide is genuinely ready.
+- [ ] Keep every article labeled `research-based` unless real hands-on testing happened.
 
-## Best Budget Gaming Headsets Under $50
+## First Guide To Finish
 
-- [ ] Choose exact final products for the Razer, HyperX, and Logitech-style slots.
-- [ ] Add official product URLs for each selected headset.
-- [ ] Add approved images or original photos.
-- [ ] Verify current platform compatibility: PC, PlayStation, Xbox, Switch, mobile.
-- [ ] Verify whether each pick is actually under the target budget on the last checked date.
-- [ ] Verify mic behavior from permitted sources or your own testing.
-- [ ] Replace search links with affiliate URLs.
+### Best budget gaming headsets under $50
 
-## Cheap Mechanical Keyboards That Do Not Feel Terrible
-
-- [ ] Choose exact final keyboard models and layouts.
-- [ ] Add official product URLs for selected Keychron or alternative boards.
-- [ ] Verify switch options, hot-swap status, connectivity, and layout.
-- [ ] Add allowed images or original photos.
-- [ ] Replace search links with affiliate URLs.
-- [ ] Verify software/firmware claims.
-
-## Steam Deck Accessories Under $30
-
-- [ ] Choose exact cable, case, stand, and accessory picks.
-- [ ] Add official product URLs where available.
-- [ ] Confirm fit for Steam Deck LCD and OLED where relevant.
-- [ ] Verify USB-C wattage/data claims from official listings.
-- [ ] Add allowed product images or original photos.
-- [ ] Replace search links with affiliate URLs.
-
-## USB Hubs For Gaming PCs
-
-- [ ] Choose exact powered and unpowered hub models.
+- [ ] Choose 3-5 exact final headset models.
+- [ ] Suggested slots:
+  - [ ] Best overall budget headset
+  - [ ] Best mic quality
+  - [ ] Best comfort
+  - [ ] Best console-friendly option
+  - [ ] Best ultra-cheap option
 - [ ] Add official product URLs.
-- [ ] Verify port speeds, power adapter details, cable length, and OS compatibility.
-- [ ] Add allowed product images or original photos.
-- [ ] Replace search links with affiliate URLs.
-- [ ] Consider whether to add a warning about direct motherboard ports for competitive keyboard/mouse use.
+- [ ] Add ASINs.
+- [ ] Add allowed product images.
+- [ ] Replace search links with approved affiliate URLs later.
+- [ ] Verify current compatibility and model variants.
+- [ ] Verify that each selected model fits the budget target on the checked date.
 
-## Budget Microphones For Discord And Streaming
+## Other Priority Guides
 
-- [ ] Choose exact USB mic models.
-- [ ] Add official product URLs.
-- [ ] Verify pickup pattern, sample rate, mute controls, stand type, and monitoring features.
-- [ ] Add allowed product images or original photos.
-- [ ] Replace search links with affiliate URLs.
-- [ ] Add your own sample notes if you test any mic hands-on later.
+### Cheap mechanical keyboards that do not feel terrible
 
-## Claims To Verify
+- [ ] Choose exact keyboard models.
+- [ ] Verify layout, switch type, hot-swap status, and software.
+- [ ] Add official URLs, ASINs, approved images, and affiliate URLs later.
 
-- [ ] "Under $50" or "under $30" status on the date checked.
-- [ ] Compatibility claims.
-- [ ] Weight, driver size, and connector claims.
-- [ ] Keyboard hot-swap and switch claims.
-- [ ] USB hub speed and power claims.
-- [ ] Microphone pickup pattern and recording specs.
+### Steam Deck accessories under $30
+
+- [ ] Choose exact accessory models.
+- [ ] Verify Steam Deck LCD/OLED fit where relevant.
+- [ ] Verify charging/cable wattage and data claims.
+- [ ] Add official URLs, ASINs, approved images, and affiliate URLs later.
+
+### USB hubs for gaming PCs
+
+- [ ] Choose exact hub models.
+- [ ] Verify powered/unpowered status, port speeds, cable length, and power adapter.
+- [ ] Add official URLs, ASINs, approved images, and affiliate URLs later.
+
+### Budget microphones for Discord and streaming
+
+- [ ] Choose exact microphone models.
+- [ ] Verify pickup pattern, connection, mute controls, stand quality, and monitoring features.
+- [ ] Add official URLs, ASINs, approved images, and affiliate URLs later.
+
+## Do Not Do Yet
+
+- [ ] Do not apply for Amazon Associates yet.
+- [ ] Do not add Amazon product images manually.
+- [ ] Do not scrape Amazon reviews.
+- [ ] Do not write exact prices unless manually maintained with `lastCheckedDate`.
+- [ ] Do not claim hands-on testing unless the product was actually tested.
 
