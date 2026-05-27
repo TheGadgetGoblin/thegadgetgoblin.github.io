@@ -4,11 +4,11 @@ Current status: all priority guides are research-based drafts with placeholder/s
 
 | Page | Product/pick | Current link status | Needs ASIN | Needs official URL | Needs approved affiliate URL | Needs allowed image | Ready for affiliate replacement? | Notes |
 |---|---|---|---|---|---|---|---|---|
-| Budget gaming headsets under $50 | Razer BlackShark V2 X | Amazon search placeholder | Yes | No | Yes | Yes | No | Candidate model selected; verify exact Amazon listing, ASIN, affiliate URL, and allowed image. |
-| Budget gaming headsets under $50 | HyperX Cloud Stinger 2 | Amazon search placeholder | Yes | No | Yes | Yes | No | Candidate model selected; official HP/HyperX URL added, but exact regional listing still needs manual confirmation. |
-| Budget gaming headsets under $50 | Logitech G432 | Amazon search placeholder | Yes | No | Yes | Yes | No | Candidate model selected; official/support URLs added, but exact Amazon listing and ASIN still need manual confirmation. |
-| Budget gaming headsets under $50 | Best ultra-cheap option | Amazon search placeholder | Yes | Yes | Yes | Yes | No | Final model still needed. |
-| Budget gaming headsets under $50 | Best console-friendly option | Amazon search placeholder | Yes | Yes | Yes | Yes | No | Final model still needed. |
+| Budget gaming headsets under $50 | Razer BlackShark V2 X | Placeholder affiliate link | No | No | Yes | Yes | No | ASIN `B086PKMZ21` recorded; approved affiliate URL and allowed image still needed. |
+| Budget gaming headsets under $50 | HyperX Cloud Stinger 2 Wired Gaming Headset | Placeholder affiliate link | Yes | No | Yes | Yes | No | Exact Amazon listing still needs manual choice; candidates mentioned: `B0B8PGDMWK`, `B0BQ5G78QR`. |
+| Budget gaming headsets under $50 | Logitech G432 Wired Gaming Headset | Placeholder affiliate link | No | No | Yes | Yes | No | ASIN `B07MRMHML9` recorded; approved affiliate URL and allowed image still needed. |
+| Budget gaming headsets under $50 | Turtle Beach Recon 70 Multiplatform Gaming Headset | Placeholder affiliate link | No | No | Yes | Yes | No | ASIN `B07NQXBZM9` recorded; confirm exact color/platform variant before monetization. |
+| Budget gaming headsets under $50 | Logitech G Astro A10 Gen 2 Wired Gaming Headset | Placeholder affiliate link | Yes | No | Yes | Yes | No | Exact Amazon listing still needs manual choice; candidates mentioned: `B07W6HDNPF`, `B0CLFJ9NCX`, older/general A10 listings. |
 | Cheap mechanical keyboards | Keychron C1/C2 Pro slot | Amazon search placeholder | Yes | Yes | Yes | Yes | No | Choose exact layout, switch, and hot-swap status. |
 | Cheap mechanical keyboards | Compact budget gaming slot | Amazon search placeholder | Yes | Yes | Yes | Yes | No | Replace category slot with exact product. |
 | Cheap mechanical keyboards | Hot-swap keyboard slot | Amazon search placeholder | Yes | Yes | Yes | Yes | No | Replace category slot with exact product. |

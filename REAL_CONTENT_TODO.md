@@ -5,7 +5,7 @@ Current state: the first five buyer guides are published as research-based draft
 ## Global Checklist
 
 - [ ] Choose exact products for each top-pick slot.
-- [ ] Replace every `Product slot - final model needed` status.
+- [ ] Replace every `Product slot - final model needed` status. Headset guide has no remaining final-model-needed slots.
 - [ ] Add manufacturer/brand official product URLs.
 - [ ] Add verified ASINs only for exact Amazon listings.
 - [ ] Replace Amazon search URLs with approved affiliate links after approval.
@@ -22,22 +22,22 @@ Current state: the first five buyer guides are published as research-based draft
 - [x] Candidate-select Razer BlackShark V2 X.
 - [x] Candidate-select HyperX Cloud Stinger 2.
 - [x] Candidate-select Logitech G432.
-- [ ] Choose final model for Best ultra-cheap option.
-- [ ] Choose final model for Best console-friendly option.
+- [x] Choose final model for Best ultra-cheap option: Turtle Beach Recon 70 Multiplatform Gaming Headset.
+- [x] Choose final model for Best console-friendly option: Logitech G Astro A10 Gen 2 Wired Gaming Headset.
 - [ ] Suggested slots:
   - [x] Best overall budget candidate
   - [x] Best comfort-focused budget candidate
   - [x] Best PC software-feature candidate
-  - [ ] Best console-friendly option
-  - [ ] Best ultra-cheap option
-- [ ] Add official product URLs.
-- [ ] Add ASINs.
+  - [x] Best console-friendly option
+  - [x] Best ultra-cheap option
+- [x] Add official product URLs.
+- [ ] Add ASINs for every pick. Razer, Logitech G432, and Turtle Beach are recorded; HyperX and Astro still need exact listing confirmation.
 - [ ] Add allowed product images.
 - [ ] Replace search links with approved affiliate URLs later.
 - [ ] Verify current compatibility and model variants.
 - [ ] Verify that each selected model fits the budget target on the checked date.
  
-Current headset status: `candidate-products-selected`. Keep `readyForAffiliateLinks` set to `false` until ASINs, approved affiliate links, allowed images, exact Amazon listings, and all final product slots are complete.
+Current headset status: `product-links-verified-pending-manual-asin-confirmation`. Keep `readyForAffiliateLinks` set to `false` until HyperX/Astro ASINs, approved affiliate links, allowed images, exact Amazon listings, and all final checks are complete.
 
 ## Other Priority Guides
 

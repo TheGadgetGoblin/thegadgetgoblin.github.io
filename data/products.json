@@ -23,22 +23,28 @@
       {
         "productName": "Razer BlackShark V2 X",
         "name": "Razer BlackShark V2 X",
-        "pickLabel": "Best overall budget candidate",
-        "slot": "Best overall budget candidate",
+        "pickLabel": "Best overall budget headset",
+        "slot": "Best overall budget headset",
         "isFinalProduct": true,
         "finalModelNeeded": false,
-        "slotStatus": "Candidate model selected - affiliate assets needed",
-        "bestFor": "PC and console players who want a lightweight wired headset with a strong boom-mic reputation.",
-        "avoidIf": "You want wireless, detachable cables, or a headset with broad companion software controls.",
-        "officialProductUrl": "https://www.razer.com/gaming-headsets/razer-blackshark-v2-x?page=tech-specs",
-        "affiliateUrl": "https://www.amazon.com/s?k=Razer+BlackShark+V2+X",
-        "asin": "TODO",
+        "slotStatus": "Product link verified - affiliate/image replacement needed",
+        "bestFor": "Budget PC/console gamers who want a lightweight wired headset with a strong mic-focused gaming setup.",
+        "avoidIf": "You want wireless audio, Bluetooth, a detachable mic, or a less gamer-styled design.",
+        "officialProductUrl": "https://www.razer.com/gaming-headsets/razer-blackshark-v2-x",
+        "productSourceUrl": "https://www.amazon.com/dp/B086PKMZ21",
+        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
+        "asin": "B086PKMZ21",
         "imageUrl": "",
-        "imageAlt": "Razer BlackShark V2 X wired gaming headset product image placeholder",
+        "imageAlt": "Placeholder image for Razer BlackShark V2 X gaming headset",
+        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
         "sourceUrls": [
           {
-            "label": "Razer BlackShark V2 X official specs",
-            "url": "https://www.razer.com/gaming-headsets/razer-blackshark-v2-x?page=tech-specs"
+            "label": "Razer BlackShark V2 X official product page",
+            "url": "https://www.razer.com/gaming-headsets/razer-blackshark-v2-x"
+          },
+          {
+            "label": "Razer BlackShark V2 X support page",
+            "url": "https://mysupport.razer.com/app/answers/detail/a_id/3862/~/razer-blackshark-v2-x-%7C-rz04-0324-support-%26-faqs"
           },
           {
             "label": "RTINGS Razer BlackShark V2 X review",
@@ -50,161 +56,218 @@
           }
         ],
         "lastCheckedDate": "2026-05-27",
-        "researchNotes": "Official specs emphasize a lightweight esports-style wired headset with 50 mm drivers and a cardioid boom mic. RTINGS describes it as a budget-friendly wired gaming headset with a strong boom microphone, but notes limited controls/software and fit-dependent sound consistency.",
+        "researchNotes": "Research-based best-overall candidate. Official and reputable sources support the lightweight wired design, 50 mm driver claim, boom mic positioning, and budget gaming focus. Affiliate URL and approved image still need replacement.",
         "pros": [
-          "Lightweight wired design according to official specs.",
-          "Strong candidate for voice chat because multiple sources highlight the boom mic as a key strength.",
-          "Simple 3.5 mm wired setup is easier to reason about across PC and consoles."
+          "Lightweight",
+          "3.5mm wired compatibility",
+          "Strong boom mic reputation",
+          "50mm drivers",
+          "Passive noise isolation"
         ],
         "cons": [
-          "Wired-only design will not fit buyers who want wireless.",
-          "RTINGS notes inconsistent bass/treble delivery depending on fit.",
-          "Non-detachable headset design and limited controls may bother some users."
+          "Wired only",
+          "Mic is not detachable",
+          "No companion EQ software for the X model",
+          "Design may feel less premium"
         ],
-        "why": "A strong first candidate for the guide because it balances budget positioning, low weight, and voice-chat focus.",
-        "watchOut": "Confirm exact variant and platform support before buying; Xbox/USB/standard versions can differ."
+        "why": "Strong best-overall candidate for budget buyers who want a simple wired headset with a mic-focused gaming setup.",
+        "watchOut": "Do not treat this as affiliate-ready until approved links and allowed images are added."
       },
       {
-        "productName": "HyperX Cloud Stinger 2",
-        "name": "HyperX Cloud Stinger 2",
-        "pickLabel": "Best comfort-focused budget candidate",
-        "slot": "Best comfort-focused budget candidate",
+        "productName": "HyperX Cloud Stinger 2 Wired Gaming Headset",
+        "name": "HyperX Cloud Stinger 2 Wired Gaming Headset",
+        "pickLabel": "Best mic/comfort value",
+        "slot": "Best mic/comfort value",
         "isFinalProduct": true,
         "finalModelNeeded": false,
-        "slotStatus": "Candidate model selected - affiliate assets needed",
-        "bestFor": "Buyers who want a mainstream wired HyperX headset family with simple controls and a budget-first pitch.",
-        "avoidIf": "You need premium build materials, wireless audio, or a detachable microphone.",
-        "officialProductUrl": "https://www.hp.com/cz-cs/products/accessories/product-details/2101014624",
-        "affiliateUrl": "https://www.amazon.com/s?k=HyperX+Cloud+Stinger+2",
-        "asin": "TODO",
+        "slotStatus": "Product link verified - exact Amazon listing/ASIN still needed",
+        "bestFor": "Gamers who want a simple wired headset from a known brand with comfort-focused padding and a flexible mic.",
+        "avoidIf": "You need wireless, premium build quality, or confirmed console-specific packaging.",
+        "officialProductUrl": "https://row.hyperx.com/products/hyperx-cloud-stinger-2",
+        "productSourceUrl": "TODO_CONFIRM_EXACT_AMAZON_LISTING - candidates mentioned: B0B8PGDMWK and B0BQ5G78QR",
+        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
+        "asin": "TODO_CONFIRM_EXACT_LISTING",
         "imageUrl": "",
-        "imageAlt": "HyperX Cloud Stinger 2 wired gaming headset product image placeholder",
+        "imageAlt": "Placeholder image for HyperX Cloud Stinger 2 wired gaming headset",
+        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
         "sourceUrls": [
           {
-            "label": "HP official HyperX Cloud Stinger 2 product detail",
-            "url": "https://www.hp.com/cz-cs/products/accessories/product-details/2101014624"
+            "label": "HyperX Cloud Stinger 2 wired official product page",
+            "url": "https://row.hyperx.com/products/hyperx-cloud-stinger-2"
           },
           {
-            "label": "PC Gamer HyperX Cloud Stinger 2 review",
-            "url": "https://www.pcgamer.com/hyperx-cloud-stinger-2-review/"
+            "label": "RTINGS HyperX Cloud Stinger 2 review",
+            "url": "https://www.rtings.com/headphones/reviews/hyperx/cloud-stinger-2-cloud-stinger-2-core"
           },
           {
-            "label": "SoundGuys HyperX Cloud Stinger 2 review",
-            "url": "https://www.soundguys.com/hyperx-cloud-stinger-2-review-79677/"
+            "label": "RTINGS HyperX headset roundup",
+            "url": "https://www.rtings.com/headphones/reviews/hyperx"
           }
         ],
         "lastCheckedDate": "2026-05-27",
-        "researchNotes": "The Cloud Stinger 2 is a reasonable budget candidate because it is a mainstream wired HyperX headset line with multiple editorial reviews. Current official product detail is easiest to verify through HP regional product pages for model 519T1AA, so the exact US listing still needs manual confirmation.",
+        "researchNotes": "Research-based mic/comfort value candidate. Official product information and review sources support the wired design, 50 mm driver positioning, comfort-focused cushions, and flexible mic. Exact Amazon listing and ASIN still need manual selection.",
         "pros": [
-          "Mainstream budget headset family with multiple editorial review references.",
-          "Simple wired gaming-headset use case fits the guide well.",
-          "A reasonable comfort/value candidate to compare against Razer and Logitech options."
+          "50mm drivers",
+          "Memory foam/leatherette cushions",
+          "Flexible boom mic",
+          "Simple wired setup",
+          "Known budget line"
         ],
         "cons": [
-          "Exact regional model/listing needs manual confirmation.",
-          "Budget construction and bundled accessories need careful verification.",
-          "Not a good fit for buyers who want wireless or more premium materials."
+          "Wired only",
+          "Exact Amazon listing must be confirmed",
+          "Build may be more basic than higher-end HyperX models"
         ],
-        "why": "A useful comfort/value candidate in the under-$50 research set, pending exact model verification.",
-        "watchOut": "Confirm the exact model number, platform version, and Amazon listing before monetization."
+        "why": "Good comfort/value candidate, pending exact Amazon listing confirmation.",
+        "watchOut": "Do not finalize ASIN or affiliate URL until the exact listing/version is chosen."
       },
       {
-        "productName": "Logitech G432",
-        "name": "Logitech G432",
-        "pickLabel": "Best PC software-feature candidate",
-        "slot": "Best PC software-feature candidate",
+        "productName": "Logitech G432 Wired Gaming Headset",
+        "name": "Logitech G432 Wired Gaming Headset",
+        "pickLabel": "Best for PC surround/software features",
+        "slot": "Best for PC surround/software features",
         "isFinalProduct": true,
         "finalModelNeeded": false,
-        "slotStatus": "Candidate model selected - affiliate assets needed",
-        "bestFor": "PC players who specifically want a wired headset with Logitech G HUB / DTS Headphone:X-style software features to verify.",
-        "avoidIf": "You are buying mainly for console use or do not want to deal with virtual-surround software requirements.",
-        "officialProductUrl": "https://www.logitechg.com/id-id/products/gaming-audio/g431-7-1-surround-sound-gaming-headset.html",
-        "affiliateUrl": "https://www.amazon.com/s?k=Logitech+G432",
-        "asin": "TODO",
+        "slotStatus": "Product link verified - affiliate/image replacement needed",
+        "bestFor": "PC gamers who want a cheap wired Logitech headset with USB DAC, G HUB, and DTS software features.",
+        "avoidIf": "You want the best comfort/build quality, wireless, or a modern minimalist design.",
+        "officialProductUrl": "https://www.logitechg.com/en-us/products/gaming-audio/g432-7-1-surround-sound-gaming-headset.981-000769.html",
+        "productSourceUrl": "https://www.amazon.com/dp/B07MRMHML9",
+        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
+        "asin": "B07MRMHML9",
         "imageUrl": "",
-        "imageAlt": "Logitech G432 wired gaming headset product image placeholder",
+        "imageAlt": "Placeholder image for Logitech G432 wired gaming headset",
+        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
         "sourceUrls": [
           {
-            "label": "Logitech G432 official regional product page",
-            "url": "https://www.logitechg.com/id-id/products/gaming-audio/g431-7-1-surround-sound-gaming-headset.html"
+            "label": "Logitech G432 official product page",
+            "url": "https://www.logitechg.com/en-us/products/gaming-audio/g432-7-1-surround-sound-gaming-headset.981-000769.html"
           },
           {
-            "label": "Logitech G432 support page",
-            "url": "https://support.logi.com/hc/en-us/articles/360024782413-G432-Gaming-Headset"
+            "label": "RTINGS Logitech G432 review",
+            "url": "https://www.rtings.com/headphones/reviews/logitech/g432-gaming-headset"
           },
           {
-            "label": "Logitech G432 user manual PDF",
-            "url": "https://www.logitech.com/assets/65644/3/g432.pdf"
+            "label": "Gaming Nexus Logitech G432 review",
+            "url": "https://www.gamersnexus.net/hwreviews/3434-logitech-g432-gaming-headset-review"
+          },
+          {
+            "label": "SoundGuys Logitech G432 review",
+            "url": "https://www.soundguys.com/logitech-g432-review-22544/"
           }
         ],
         "lastCheckedDate": "2026-05-27",
-        "researchNotes": "Logitech documentation and official regional pages make the G432 easy to verify for driver size, wired connectivity, microphone details, and G HUB/DTS software requirements. The software-dependent surround angle should be framed as something to verify, not the main reason to buy.",
+        "researchNotes": "Research-based PC software-feature pick. Official and review sources support the wired 3.5 mm/USB DAC setup, G HUB/DTS software angle, 50 mm driver claim, and flip-to-mute mic positioning. Affiliate URL and approved image still need replacement.",
         "pros": [
-          "Official/support documentation is relatively easy to verify.",
-          "Useful candidate for PC buyers who want Logitech software features.",
-          "Wired 3.5 mm / USB-style setup can be practical for desktop gaming."
+          "50mm drivers",
+          "Flip-to-mute mic",
+          "USB DAC and 3.5mm options",
+          "Logitech G HUB/DTS feature support on Windows"
         ],
         "cons": [
-          "Virtual surround features depend on software and platform support.",
-          "Not the cleanest pick for buyers who want simple console-first use.",
-          "Exact current Amazon listing and regional model need manual confirmation."
+          "Older design",
+          "Software features are mainly Windows-focused",
+          "Comfort/build reviews are mixed"
         ],
-        "why": "A PC-feature candidate for shoppers comparing wired budget headsets with software support.",
-        "watchOut": "Do not buy it only for virtual surround; verify G HUB requirements and platform support first."
+        "why": "Good PC/software-feature pick for buyers who specifically want Logitech wired headset features.",
+        "watchOut": "Do not buy only for virtual surround; verify platform and software expectations."
       },
       {
-        "productName": "Best ultra-cheap option - final model needed",
-        "name": "Best ultra-cheap option - final model needed",
+        "productName": "Turtle Beach Recon 70 Multiplatform Gaming Headset",
+        "name": "Turtle Beach Recon 70 Multiplatform Gaming Headset",
         "pickLabel": "Best ultra-cheap option",
         "slot": "Best ultra-cheap option",
-        "isFinalProduct": false,
-        "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
-        "bestFor": "TODO - choose a specific headset for buyers who need the lowest reasonable spend.",
-        "avoidIf": "TODO - define once the final model is selected.",
-        "officialProductUrl": "TODO - add official product URL",
-        "affiliateUrl": "https://www.amazon.com/s?k=ultra+cheap+gaming+headset+under+30",
-        "asin": "TODO",
+        "isFinalProduct": true,
+        "finalModelNeeded": false,
+        "slotStatus": "Product link verified - affiliate/image replacement needed",
+        "bestFor": "Buyers who want the cheapest reasonable wired gaming headset from a known brand.",
+        "avoidIf": "You want premium comfort, detachable cables, wireless, or stronger mic/audio quality.",
+        "officialProductUrl": "https://www.turtlebeach.com/products/recon-70-headset",
+        "productSourceUrl": "https://www.amazon.com/dp/B07NQXBZM9",
+        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
+        "asin": "B07NQXBZM9",
         "imageUrl": "",
-        "imageAlt": "Ultra-cheap gaming headset product image placeholder",
-        "sourceUrls": [],
+        "imageAlt": "Placeholder image for Turtle Beach Recon 70 multiplatform gaming headset",
+        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
+        "sourceUrls": [
+          {
+            "label": "Turtle Beach Recon 70 official product page",
+            "url": "https://www.turtlebeach.com/products/recon-70-headset"
+          },
+          {
+            "label": "Nintendo Store Turtle Beach Recon 70 product/spec page",
+            "url": "https://www.nintendo.com/us/store/products/turtle-beach-recon-70-gaming-headset-117875/"
+          },
+          {
+            "label": "Headphone Review Turtle Beach Recon 70 review",
+            "url": "https://headphonereview.com/gaming/turtle-beach-recon-70-gaming-headset-review/"
+          }
+        ],
         "lastCheckedDate": "2026-05-27",
-        "researchNotes": "TODO - choose the exact model, verify official specs, and add reputable source links.",
+        "researchNotes": "Research-based ultra-cheap slot candidate. Official and retail/spec sources support the multiplatform wired 3.5 mm positioning, flip-to-mute mic, lightweight build, and low-cost role. Confirm exact color/platform variant before monetization.",
         "pros": [
-          "TODO - add product-specific pros after choosing the exact model."
+          "Low-cost positioning",
+          "3.5mm wired compatibility",
+          "Flip-to-mute mic",
+          "Lightweight",
+          "Multiple color/platform variants"
         ],
         "cons": [
-          "TODO - add product-specific drawbacks after choosing the exact model."
+          "Basic build",
+          "No wireless",
+          "Exact variant/color must be confirmed",
+          "Not a premium audio pick"
         ],
-        "why": "Placeholder for the cheapest acceptable headset slot.",
-        "watchOut": "Avoid no-name listings without clear warranty, connector, or mic information."
+        "why": "Good ultra-cheap slot candidate from a known gaming-headset brand.",
+        "watchOut": "Confirm exact color/platform variant before monetization."
       },
       {
-        "productName": "Best console-friendly option - final model needed",
-        "name": "Best console-friendly option - final model needed",
+        "productName": "Logitech G Astro A10 Gen 2 Wired Gaming Headset",
+        "name": "Logitech G Astro A10 Gen 2 Wired Gaming Headset",
         "pickLabel": "Best console-friendly option",
         "slot": "Best console-friendly option",
-        "isFinalProduct": false,
-        "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
-        "bestFor": "TODO - choose a specific headset for PlayStation, Xbox, Switch, or controller-first use.",
-        "avoidIf": "TODO - define once the final model is selected.",
-        "officialProductUrl": "TODO - add official product URL",
-        "affiliateUrl": "https://www.amazon.com/s?k=console+friendly+wired+gaming+headset",
-        "asin": "TODO",
+        "isFinalProduct": true,
+        "finalModelNeeded": false,
+        "slotStatus": "Product link verified - exact Amazon listing/ASIN still needed",
+        "bestFor": "Console players who want a simple 3.5mm wired headset that works across major platforms.",
+        "avoidIf": "You need wireless, USB-only features, detachable microphone, or premium audio tuning.",
+        "officialProductUrl": "https://www.logitechg.com/en-us/products/gaming-audio/a10-gen-2.939-002052.html",
+        "productSourceUrl": "TODO_CONFIRM_EXACT_AMAZON_LISTING - candidates mentioned: B07W6HDNPF, B0CLFJ9NCX, and older/general A10 listings",
+        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
+        "asin": "TODO_CONFIRM_EXACT_LISTING",
         "imageUrl": "",
-        "imageAlt": "Console-friendly wired gaming headset product image placeholder",
-        "sourceUrls": [],
+        "imageAlt": "Placeholder image for Logitech G Astro A10 Gen 2 wired gaming headset",
+        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
+        "sourceUrls": [
+          {
+            "label": "Logitech G Astro A10 Gen 2 official product page",
+            "url": "https://www.logitechg.com/en-us/products/gaming-audio/a10-gen-2.939-002052.html"
+          },
+          {
+            "label": "B&H Astro A10 Gen 2 listing/spec page",
+            "url": "https://www.bhphotovideo.com/c/product/1691682-REG/astro_gaming_939_002052_a10_gen_2_wired.html"
+          },
+          {
+            "label": "TechGearLab Astro A10 Gen 2 review",
+            "url": "https://www.techgearlab.com/reviews/audio/gaming-headset/astro-a10-gen-2"
+          }
+        ],
         "lastCheckedDate": "2026-05-27",
-        "researchNotes": "TODO - choose the exact model and verify compatibility with target consoles/controllers.",
+        "researchNotes": "Research-based console-friendly candidate. Official and source pages support the simple 3.5 mm wired, cross-platform, flip-to-mute, inline-volume positioning. Exact Amazon listing and ASIN still need manual variant selection.",
         "pros": [
-          "TODO - add product-specific pros after choosing the exact model."
+          "Cross-platform 3.5mm wired design",
+          "Flip-to-mute mic",
+          "Inline volume",
+          "Durable/simple design",
+          "Known console-friendly brand"
         ],
         "cons": [
-          "TODO - add product-specific drawbacks after choosing the exact model."
+          "Exact Amazon listing/ASIN must be manually confirmed",
+          "Wired only",
+          "No surround/software extras"
         ],
-        "why": "Placeholder for the best console/controller-first headset slot.",
-        "watchOut": "Verify whether the headset uses 3.5 mm, USB, or platform-specific features."
+        "why": "Good console-friendly pick for controller-first buyers who want a simple wired headset.",
+        "watchOut": "Do not finalize ASIN until exact listing and variant are chosen."
       }
     ],
     "pros": [
@@ -279,14 +342,14 @@
       }
     ],
     "readyForAffiliateLinks": false,
-    "productSelectionStatus": "candidate-products-selected",
+    "productSelectionStatus": "product-links-verified-pending-manual-asin-confirmation",
     "selectionNote": "This guide has finalized candidate models, but affiliate links, ASINs, and approved product images still need manual replacement before monetization.",
     "manualSelectionChecklist": [
-      "Confirm exact Amazon listings for each candidate model.",
-      "Add ASINs for the exact listings only after manual verification.",
-      "Replace Amazon search URLs with approved affiliate links after approval.",
-      "Add allowed product images from approved APIs, manufacturer permission, or original photos.",
-      "Re-check current availability, compatibility, and claims before monetization."
+      "Confirm HyperX Cloud Stinger 2 exact Amazon listing and ASIN.",
+      "Confirm Logitech G Astro A10 Gen 2 exact Amazon listing and ASIN.",
+      "Replace placeholder affiliate URLs only after Amazon Associates approval.",
+      "Add allowed product images from original photos, manufacturer-permitted media, or approved Amazon API/PA API image sources.",
+      "Re-check each source and listing before changing this guide to affiliate-ready."
     ]
   },
   {
