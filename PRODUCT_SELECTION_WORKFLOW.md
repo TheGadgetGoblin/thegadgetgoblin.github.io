@@ -158,3 +158,13 @@ Only do this when:
 - No fake hands-on claims appear.
 - Privacy and affiliate disclosure pages have been reviewed.
 
+## Headset Guide Current Pattern
+
+The headset guide may use an intermediate status:
+
+```json
+productSelectionStatus: "candidate-products-selected"
+readyForAffiliateLinks: false
+```
+
+Use this when exact candidate models have been chosen, but affiliate links, ASINs, and approved images still need replacement.

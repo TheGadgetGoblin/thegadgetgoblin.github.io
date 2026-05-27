@@ -19,11 +19,15 @@ Current state: the first five buyer guides are published as research-based draft
 
 ### Best budget gaming headsets under $50
 
-- [ ] Choose 3-5 exact final headset models.
+- [x] Candidate-select Razer BlackShark V2 X.
+- [x] Candidate-select HyperX Cloud Stinger 2.
+- [x] Candidate-select Logitech G432.
+- [ ] Choose final model for Best ultra-cheap option.
+- [ ] Choose final model for Best console-friendly option.
 - [ ] Suggested slots:
-  - [ ] Best overall budget headset
-  - [ ] Best mic quality
-  - [ ] Best comfort
+  - [x] Best overall budget candidate
+  - [x] Best comfort-focused budget candidate
+  - [x] Best PC software-feature candidate
   - [ ] Best console-friendly option
   - [ ] Best ultra-cheap option
 - [ ] Add official product URLs.
@@ -32,6 +36,8 @@ Current state: the first five buyer guides are published as research-based draft
 - [ ] Replace search links with approved affiliate URLs later.
 - [ ] Verify current compatibility and model variants.
 - [ ] Verify that each selected model fits the budget target on the checked date.
+ 
+Current headset status: `candidate-products-selected`. Keep `readyForAffiliateLinks` set to `false` until ASINs, approved affiliate links, allowed images, exact Amazon listings, and all final product slots are complete.
 
 ## Other Priority Guides
 
@@ -67,4 +73,3 @@ Current state: the first five buyer guides are published as research-based draft
 - [ ] Do not scrape Amazon reviews.
 - [ ] Do not write exact prices unless manually maintained with `lastCheckedDate`.
 - [ ] Do not claim hands-on testing unless the product was actually tested.
-
