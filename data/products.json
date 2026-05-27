@@ -7,28 +7,60 @@
     "category": "Budget gaming gear",
     "categorySlug": "budget-gaming-gear",
     "shortDescription": "A research-based starter guide to affordable gaming headsets that prioritize comfort, mic clarity, and platform compatibility.",
+    "intro": "Budget gaming headsets are messy territory. Some are perfectly usable for Discord and console chat; others are plastic torture devices wearing a shiny badge. This research-based guide focuses on the boring things that actually matter: comfort, mic clarity, connection type, platform support, and whether replacement parts or a return window can save you if the fit is wrong.",
     "reviewType": "research-based",
+    "quickVerdict": "Start with a wired headset from a known gaming-audio brand if you want the least complicated under-$50 setup. The Razer BlackShark V2 X, HyperX Cloud Stinger 2, and Logitech G432-style wired headsets are the kinds of products to compare first, but verify current price, warranty, and platform support before buying.",
     "bestFor": ["Console and PC players", "Discord voice chat", "First gaming setup"],
     "avoidIf": ["You need studio-grade audio", "You want wireless only"],
+    "topPicks": [
+      {
+        "slot": "Best lightweight wired pick to compare first",
+        "name": "Razer BlackShark V2 X",
+        "why": "Razer's official specs emphasize a lightweight 240 g design, 50 mm drivers, and a cardioid mic, which makes it a sensible first comparison point for buyers who care about comfort and voice chat.",
+        "watchOut": "Confirm the exact model and platform version before buying; Xbox, USB, and standard 3.5 mm variants can differ.",
+        "affiliateUrl": "https://www.amazon.com/s?k=Razer+BlackShark+V2+X"
+      },
+      {
+        "slot": "Budget comfort pick to verify",
+        "name": "HyperX Cloud Stinger 2",
+        "why": "This is a common budget headset family to compare because the pitch is simple: wired connection, lightweight fit, and mainstream compatibility.",
+        "watchOut": "Check whether the listing includes the exact connector and accessories you need.",
+        "affiliateUrl": "https://www.amazon.com/s?k=HyperX+Cloud+Stinger+2"
+      },
+      {
+        "slot": "PC-focused surround-software pick",
+        "name": "Logitech G432",
+        "why": "Logitech's support material makes it easy to verify model numbers and software support, which matters if you want a headset tied into PC surround features.",
+        "watchOut": "Do not buy it only for virtual surround. Stereo quality, comfort, and mic quality matter more.",
+        "affiliateUrl": "https://www.amazon.com/s?k=Logitech+G432"
+      }
+    ],
     "pros": ["Easy category to compare by comfort and mic samples", "Many wired models work across PC and consoles", "Good starter upgrade over laptop speakers"],
     "cons": ["Build quality varies sharply", "Marketing claims often overstate surround sound", "Replacement pads and cables are not always available"],
+    "buyingCriteria": ["Weight and clamp force matter more than RGB.", "3.5 mm is easiest for broad console support; USB can be simpler for PC controls.", "A flexible boom mic is usually better than a tiny inline mic for game chat.", "Look for a return window because headset comfort is personal."],
+    "commonMistakes": ["Buying for virtual surround claims before checking stereo performance.", "Ignoring whether the headset works with your console controller or PC ports.", "Assuming bigger drivers automatically mean better sound.", "Forgetting that cheap pleather pads can get warm quickly."],
     "specs": {
-      "priceTier": "Under $50",
+      "priceTier": "Under $50 target; verify current price",
       "connection": "Mostly wired 3.5 mm or USB",
       "keyChecks": "Mic clarity, clamp force, platform support, cable quality"
     },
-    "goblinScore": 82,
+    "goblinScore": 84,
     "affiliateNetwork": "Amazon search placeholder",
     "affiliateUrl": "https://www.amazon.com/s?k=best+budget+gaming+headset+under+50",
     "imageUrl": "",
     "imageAlt": "Budget gaming headset product placeholder",
     "asin": "",
-    "officialProductUrl": "",
-    "sourceUrls": [],
+    "officialProductUrl": "TODO - add official page for selected final product",
+    "sourceUrls": [
+      { "label": "RTINGS budget gaming headsets guide", "url": "https://www.rtings.com/headphones/reviews/best/gaming-headsets-under-50" },
+      { "label": "Tom's Hardware gaming headset buying guide", "url": "https://www.tomshardware.com/peripherals/gaming-headsets/best-gaming-headsets" },
+      { "label": "Razer BlackShark V2 X official specs", "url": "https://www.razer.com/gaming-headsets/razer-blackshark-v2-x?page=tech-specs" },
+      { "label": "Logitech G432 support page", "url": "https://support.logi.com/hc/en-us/articles/360024782413-G432-Gaming-Headset" }
+    ],
     "lastCheckedDate": "2026-05-27",
     "datePublished": "2026-05-27",
     "dateUpdated": "2026-05-27",
-    "alternatives": ["Budget USB microphone plus basic headphones", "Used midrange wired headset"],
+    "alternatives": ["Budget USB microphone plus basic headphones", "Used midrange wired headset", "Entry-level standalone mic if your current headphones are already comfortable"],
     "finalTake": "Start with comfort, a clear mic, and the platform you actually use. Skip cheap models that lean entirely on RGB and vague virtual surround claims.",
     "faq": [
       {
@@ -49,33 +81,68 @@
     "category": "Budget gaming gear",
     "categorySlug": "budget-gaming-gear",
     "shortDescription": "A practical keyboard shortlist framework for switches, stabilizers, layout, and desk fit.",
+    "intro": "Cheap mechanical keyboards can be excellent little desk goblins, but only if you ignore the loud marketing pile. The useful questions are simple: does the layout fit your desk, are the switches tolerable, do the stabilizers rattle like a drawer full of screws, and can you live with the software?",
     "reviewType": "research-based",
+    "quickVerdict": "For most budget buyers, start by comparing a wired Keychron C-series board, a compact budget gaming board, and a cheap hot-swap option if you plan to modify later. A board that feels stable and fits your desk beats a flashy board with mystery switches.",
     "bestFor": ["Budget gaming desks", "First mechanical keyboard", "Typing and casual gaming"],
     "avoidIf": ["You need hot-swap switches on every pick", "You want ultra-quiet office use"],
+    "topPicks": [
+      {
+        "slot": "Best simple wired comparison point",
+        "name": "Keychron C1 Pro / C2 Pro family",
+        "why": "Keychron's budget wired boards are useful reference points because they keep the feature set practical: standard layouts, mechanical switches, and less gamer glitter.",
+        "watchOut": "Check the exact layout, switch, backlight, and hot-swap status before buying.",
+        "affiliateUrl": "https://www.amazon.com/s?k=Keychron+C1+Pro+mechanical+keyboard"
+      },
+      {
+        "slot": "Compact budget gaming slot",
+        "name": "60 percent or 75 percent budget mechanical keyboard",
+        "why": "Compact boards leave more mouse space, which matters on small gaming desks.",
+        "watchOut": "A tiny layout can be annoying if you use function keys, arrow keys, or number entry every day.",
+        "affiliateUrl": "https://www.amazon.com/s?k=budget+75+percent+mechanical+keyboard"
+      },
+      {
+        "slot": "Tinker-friendly slot",
+        "name": "Cheap hot-swap mechanical keyboard",
+        "why": "Hot-swap sockets are worth considering if you want to replace switches later instead of replacing the whole board.",
+        "watchOut": "Very cheap hot-swap boards can still have weak stabilizers and rough software.",
+        "affiliateUrl": "https://www.amazon.com/s?k=cheap+hotswap+mechanical+keyboard"
+      }
+    ],
     "pros": ["Huge improvement over many membrane boards", "Compact layouts save desk space", "Switch options make the category flexible"],
     "cons": ["Cheap stabilizers can rattle", "Software support is inconsistent", "Loud switches can annoy shared spaces"],
+    "buyingCriteria": ["Choose layout before brand: full-size, TKL, 75 percent, or 60 percent.", "Linear switches are usually easier for gaming; tactile switches are a good general-purpose middle ground.", "Hot-swap is useful if you want a repairable or moddable board.", "Avoid software-dependent features unless the software has a good reputation."],
+    "commonMistakes": ["Buying blue/clicky switches for a shared room.", "Choosing a 60 percent board without realizing it hides arrow and function keys.", "Assuming RGB means better build quality.", "Ignoring keycap size and replacement compatibility."],
     "specs": {
-      "priceTier": "Under $50",
+      "priceTier": "Under $50 target; some strong picks may drift higher",
       "connection": "USB wired or budget wireless",
       "keyChecks": "Switch type, stabilizers, layout, keycap quality"
     },
-    "goblinScore": 79,
+    "goblinScore": 82,
     "affiliateNetwork": "Amazon search placeholder",
     "affiliateUrl": "https://www.amazon.com/s?k=cheap+mechanical+keyboard+gaming",
     "imageUrl": "",
     "imageAlt": "Budget mechanical keyboard product placeholder",
     "asin": "",
-    "officialProductUrl": "",
-    "sourceUrls": [],
+    "officialProductUrl": "TODO - add official page for selected final product",
+    "sourceUrls": [
+      { "label": "Tom's Hardware budget mechanical keyboard guide", "url": "https://www.tomshardware.com/best-picks/best-budget-mechanical-keyboards" },
+      { "label": "RTINGS cheap mechanical keyboard guide", "url": "https://www.rtings.com/keyboard/reviews/best/cheap-mechanical-keyboards" },
+      { "label": "PC Gamer mechanical keyboard guide", "url": "https://www.pcgamer.com/best-mechanical-keyboard/" }
+    ],
     "lastCheckedDate": "2026-05-27",
     "datePublished": "2026-05-27",
     "dateUpdated": "2026-05-27",
-    "alternatives": ["Low-profile membrane keyboard", "Used enthusiast keyboard"],
+    "alternatives": ["Low-profile membrane keyboard", "Used enthusiast keyboard", "Budget office keyboard plus better mouse"],
     "finalTake": "A cheap mechanical keyboard can be a real upgrade if the stabilizers, layout, and switch choice match your space. Do not buy on lighting alone.",
     "faq": [
       {
         "question": "Are blue switches good for gaming?",
         "answer": "They work, but they are loud. Linear or tactile switches are usually easier to live with."
+      },
+      {
+        "question": "Is hot-swap required?",
+        "answer": "No. It is nice for repairs and switch experiments, but a solid non-hot-swap board can still be the better budget buy."
       }
     ]
   },
@@ -87,33 +154,67 @@
     "category": "Handheld gaming",
     "categorySlug": "handheld-gaming",
     "shortDescription": "Deal-analysis notes for low-cost accessories that make a handheld PC easier to carry, charge, clean, or dock.",
-    "reviewType": "deal-analysis",
+    "intro": "Steam Deck accessories under $30 should solve one small problem well. The good stuff is boring: a rated USB-C cable, a compact stand, a screen protector, thumb grips, a cleaning kit, or a slim case that does not choke airflow. The bad stuff usually promises too much and saves money in exactly the wrong place.",
+    "reviewType": "research-based",
+    "quickVerdict": "Prioritize charging safety, fit, and portability over novelty. A cheap accessory is only a deal if it does not risk your handheld, block vents, or make travel more annoying.",
     "bestFor": ["Steam Deck owners", "Travel setups", "Low-cost quality-of-life upgrades"],
     "avoidIf": ["You need a full desktop dock", "You already own a strong USB-C kit"],
+    "topPicks": [
+      {
+        "slot": "Most useful first buy",
+        "name": "Rated USB-C cable or right-angle adapter",
+        "why": "A properly rated cable or adapter can make charging and couch play less awkward without adding bulk.",
+        "watchOut": "Verify wattage and data rating. Avoid mystery cables with vague specs.",
+        "affiliateUrl": "https://www.amazon.com/s?k=steam+deck+usb+c+cable+right+angle"
+      },
+      {
+        "slot": "Travel quality-of-life pick",
+        "name": "Slim carrying case or pouch",
+        "why": "A smaller case can be more useful than the stock case for backpacks and daily carry.",
+        "watchOut": "Check whether it protects sticks and triggers, not just the shell.",
+        "affiliateUrl": "https://www.amazon.com/s?k=steam+deck+slim+case"
+      },
+      {
+        "slot": "Desk and nightstand pick",
+        "name": "Compact stand",
+        "why": "A stand makes updates, downloads, controller play, and video watching easier.",
+        "watchOut": "Avoid stands that block rear vents or press awkwardly against the grips.",
+        "affiliateUrl": "https://www.amazon.com/s?k=steam+deck+stand"
+      }
+    ],
     "pros": ["Small accessories can solve real travel problems", "Easy category for incremental upgrades", "Many useful picks stay inexpensive"],
     "cons": ["Some cases block airflow", "Cheap chargers may not provide enough wattage", "No-name cables can be unreliable"],
+    "buyingCriteria": ["For charging gear, verify USB-C wattage and safety reputation.", "For cases and grips, check vent clearance and trigger protection.", "For stands, look for stability and a viewing angle that works with a controller.", "Avoid accessories that make the Deck harder to cool, charge, or pack."],
+    "commonMistakes": ["Buying the cheapest charger without checking output.", "Adding bulky grips before deciding whether portability matters.", "Using an adapter that stresses the USB-C port.", "Forgetting that many accessories also need to fit OLED or LCD model differences."],
     "specs": {
-      "priceTier": "Under $30",
+      "priceTier": "Under $30 target; verify current price",
       "connection": "USB-C and accessory-based",
       "keyChecks": "Wattage, cable rating, fit, heat clearance"
     },
-    "goblinScore": 84,
+    "goblinScore": 85,
     "affiliateNetwork": "Amazon search placeholder",
     "affiliateUrl": "https://www.amazon.com/s?k=steam+deck+accessories+under+30",
     "imageUrl": "",
     "imageAlt": "Steam Deck accessory product placeholder",
     "asin": "",
-    "officialProductUrl": "",
-    "sourceUrls": [],
+    "officialProductUrl": "TODO - add official page for selected final accessory",
+    "sourceUrls": [
+      { "label": "PC Gamer Steam Deck accessories guide", "url": "https://www.pcgamer.com/best-steam-deck-accessories-right-now/" },
+      { "label": "Valve Steam Deck official site", "url": "https://www.steamdeck.com/" }
+    ],
     "lastCheckedDate": "2026-05-27",
     "datePublished": "2026-05-27",
     "dateUpdated": "2026-05-27",
-    "alternatives": ["Save for a full dock", "Use existing phone chargers only if wattage is adequate"],
+    "alternatives": ["Save for a full dock", "Use existing phone chargers only if wattage is adequate", "Buy fewer accessories and upgrade storage instead"],
     "finalTake": "The best cheap Steam Deck accessories are practical: a rated cable, compact stand, screen cloth, thumb grips, or small travel case.",
     "faq": [
       {
         "question": "Should I buy the cheapest USB-C charger?",
         "answer": "No. Check output wattage and safety reputation before using a charger with an expensive handheld."
+      },
+      {
+        "question": "Do I need a dock first?",
+        "answer": "Only if you plan to use the Steam Deck like a desktop or TV console. Otherwise, cable, case, and stand upgrades are usually more useful under $30."
       }
     ]
   },
@@ -125,33 +226,67 @@
     "category": "PC upgrades",
     "categorySlug": "pc-upgrades",
     "shortDescription": "A comparison starter for powered and unpowered hubs, desk cable cleanup, and peripheral overload.",
-    "reviewType": "comparison",
+    "intro": "A USB hub for a gaming PC is not glamorous, but it can stop your desk from becoming a cable cave. The right hub depends on what you plug in: controllers and dongles are easy, external drives need speed, and power-hungry devices may need a powered hub instead of a tiny passive splitter.",
+    "reviewType": "research-based",
+    "quickVerdict": "For most gaming desks, use a simple hub for low-power peripherals and a powered hub for many devices, charging ports, or anything that disconnects under load. Do not expect a cheap hub to behave like Thunderbolt or a full dock.",
     "bestFor": ["Gaming PCs", "Desk cable cleanup", "Peripheral-heavy setups"],
     "avoidIf": ["You need Thunderbolt-class bandwidth", "You are connecting multiple high-draw drives"],
+    "topPicks": [
+      {
+        "slot": "Simple desk hub slot",
+        "name": "4-port USB-A or USB-C hub",
+        "why": "Good for controllers, wireless dongles, USB lights, and quick-access desk ports.",
+        "watchOut": "Do not overload it with several storage drives or high-draw devices.",
+        "affiliateUrl": "https://www.amazon.com/s?k=4+port+usb+hub+for+pc"
+      },
+      {
+        "slot": "Powered hub slot",
+        "name": "Powered 7-port or 10-port USB hub",
+        "why": "A powered hub is the safer choice when you have many peripherals or devices that disconnect from power dips.",
+        "watchOut": "Check the included power adapter and port speeds.",
+        "affiliateUrl": "https://www.amazon.com/s?k=powered+usb+hub+pc"
+      },
+      {
+        "slot": "Compact USB-C slot",
+        "name": "USB-C hub with USB-A ports",
+        "why": "Useful if your PC or laptop has USB-C and you mainly need quick peripheral access.",
+        "watchOut": "Many compact hubs are laptop-oriented and may include ports you do not need.",
+        "affiliateUrl": "https://www.amazon.com/s?k=usb+c+hub+usb+a+ports+pc"
+      }
+    ],
     "pros": ["Makes desk devices easier to reach", "Powered hubs can reduce port strain", "Useful for controllers, dongles, lights, and audio gear"],
     "cons": ["Bad hubs can disconnect devices", "Power delivery claims need careful reading", "Cheap hubs may not handle storage well"],
+    "buyingCriteria": ["Match port speed to device: storage needs faster ports than controllers.", "Choose powered hubs for many devices or anything that draws meaningful power.", "Cable length and mounting matter on a gaming desk.", "Keep mouse and keyboard direct to the PC if you are sensitive to competitive input reliability."],
+    "commonMistakes": ["Buying a tiny passive hub for too many devices.", "Ignoring whether ports are USB 2.0, 3.x, or USB-C.", "Expecting display output from a basic hub.", "Mounting the hub where cables yank on the port."],
     "specs": {
-      "priceTier": "Under $25 to $100",
+      "priceTier": "Under $25 to $100; verify current price",
       "connection": "USB-A and USB-C",
       "keyChecks": "Powered vs unpowered, port speed, cable length, mounting"
     },
-    "goblinScore": 81,
+    "goblinScore": 83,
     "affiliateNetwork": "Amazon search placeholder",
     "affiliateUrl": "https://www.amazon.com/s?k=usb+hub+for+gaming+pc",
     "imageUrl": "",
     "imageAlt": "USB hub product placeholder",
     "asin": "",
-    "officialProductUrl": "",
-    "sourceUrls": [],
+    "officialProductUrl": "TODO - add official page for selected final hub",
+    "sourceUrls": [
+      { "label": "Tom's Hardware USB hub guide", "url": "https://www.tomshardware.com/best-picks/best-usb-hubs" },
+      { "label": "USB-IF consumer information", "url": "https://www.usb.org/consumer" }
+    ],
     "lastCheckedDate": "2026-05-27",
     "datePublished": "2026-05-27",
     "dateUpdated": "2026-05-27",
-    "alternatives": ["Front-panel ports", "Motherboard rear I/O", "PCIe expansion card"],
+    "alternatives": ["Front-panel ports", "Motherboard rear I/O", "PCIe expansion card", "Full USB-C dock for laptops"],
     "finalTake": "For gaming desks, prioritize stable ports and sensible cable placement. Choose powered hubs for many devices or anything power-hungry.",
     "faq": [
       {
         "question": "Do USB hubs add input lag?",
         "answer": "A decent hub should be fine for normal peripherals, but competitive players may prefer direct motherboard ports for keyboard and mouse."
+      },
+      {
+        "question": "Should external drives use a hub?",
+        "answer": "They can, but storage is where port speed and hub quality matter most. Use a quality powered hub or a direct motherboard port for important drives."
       }
     ]
   },
@@ -163,33 +298,67 @@
     "category": "Audio gear",
     "categorySlug": "audio-gear",
     "shortDescription": "Research-based buying notes for USB microphones, boom arms, desk noise, and simple streaming setups.",
+    "intro": "A budget microphone can make you sound much clearer than a headset mic, but only if you place it correctly. The trick is not buying the shiniest cylinder on the desk. Look for USB simplicity, a sensible pickup pattern, gain control or mute control, and a stand setup that lets the mic sit close without eating your entire workspace.",
     "reviewType": "research-based",
+    "quickVerdict": "For Discord and beginner streaming, start with a simple USB mic and spend attention on placement. A cheaper mic close to your mouth often beats a fancier mic sitting across the desk like a tiny judgmental tower.",
     "bestFor": ["Discord calls", "Beginner streaming", "Remote work audio"],
     "avoidIf": ["You need XLR studio workflow", "Your room is extremely echo-heavy"],
+    "topPicks": [
+      {
+        "slot": "Budget plug-and-play slot",
+        "name": "Amazon Basics USB Condenser-style mic",
+        "why": "PC Gamer calls out an Amazon Basics USB condenser option as a budget microphone type worth considering, and the simple USB/cardioid formula fits Discord buyers.",
+        "watchOut": "Verify the exact model, return policy, and whether the stand works for your desk.",
+        "affiliateUrl": "https://www.amazon.com/s?k=Amazon+Basics+USB+Condenser+Microphone"
+      },
+      {
+        "slot": "Gaming-brand budget slot",
+        "name": "HyperX SoloCast / SoloCast 2-style USB mic",
+        "why": "A small USB mic with mute control is a practical upgrade for basic voice chat and beginner streaming.",
+        "watchOut": "Budget stands can transmit desk vibration, so plan for placement or a boom arm later.",
+        "affiliateUrl": "https://www.amazon.com/s?k=HyperX+SoloCast+USB+microphone"
+      },
+      {
+        "slot": "Cleaner desk setup slot",
+        "name": "Elgato Wave Neo-style USB mic",
+        "why": "Tom's Hardware highlights budget-friendly plug-and-play USB microphones in this category, and the Wave Neo-style setup is aimed at simple creator desks.",
+        "watchOut": "Check whether the price still fits your budget and whether cheaper options are good enough.",
+        "affiliateUrl": "https://www.amazon.com/s?k=Elgato+Wave+Neo+microphone"
+      }
+    ],
     "pros": ["USB mics are easy to set up", "Mic placement improves quality dramatically", "Better voice clarity than many headset mics"],
     "cons": ["Desk vibration can travel into the mic", "Condenser mics pick up room noise", "Bundled stands are often weak"],
+    "buyingCriteria": ["USB is simplest for Discord and beginner streaming.", "Cardioid pickup is usually the safest first choice for one person at a desk.", "A mute button is useful if calls are part of your routine.", "Placement matters more than most spec-sheet bragging."],
+    "commonMistakes": ["Leaving the mic too far away and cranking gain.", "Buying a condenser mic for a loud untreated room.", "Ignoring keyboard noise and desk vibration.", "Buying XLR gear before you need the extra complexity."],
     "specs": {
-      "priceTier": "Under $50 to $100",
+      "priceTier": "Under $50 to $100; verify current price",
       "connection": "USB",
       "keyChecks": "Pickup pattern, gain control, monitoring, stand quality"
     },
-    "goblinScore": 83,
+    "goblinScore": 84,
     "affiliateNetwork": "Amazon search placeholder",
     "affiliateUrl": "https://www.amazon.com/s?k=budget+usb+microphone+discord+streaming",
     "imageUrl": "",
     "imageAlt": "Budget USB microphone product placeholder",
     "asin": "",
-    "officialProductUrl": "",
-    "sourceUrls": [],
+    "officialProductUrl": "TODO - add official page for selected final microphone",
+    "sourceUrls": [
+      { "label": "Tom's Hardware gaming microphones guide", "url": "https://www.tomshardware.com/features/best-mic-for-streaming" },
+      { "label": "PC Gamer microphone guide", "url": "https://www.pcgamer.com/best-microphone-gaming-streaming/" }
+    ],
     "lastCheckedDate": "2026-05-27",
     "datePublished": "2026-05-27",
     "dateUpdated": "2026-05-27",
-    "alternatives": ["Better headset mic", "Dynamic USB microphone"],
+    "alternatives": ["Better headset mic", "Dynamic USB microphone", "Clip-on lavalier mic for calls", "Used USB mic from a known audio brand"],
     "finalTake": "A budget USB mic can sound dramatically better than a headset mic if you place it close and control room noise.",
     "faq": [
       {
         "question": "Do I need a boom arm?",
         "answer": "Not always, but getting the mic closer to your mouth usually helps more than buying a flashier mic."
+      },
+      {
+        "question": "Is USB or XLR better for beginners?",
+        "answer": "USB is better for most beginners because it is simpler. XLR makes sense later if you want an audio interface and more control."
       }
     ]
   },
@@ -201,11 +370,24 @@
     "category": "Desk setup upgrades",
     "categorySlug": "desk-setup-upgrades",
     "shortDescription": "A practical starter guide for cable routing, monitor height, compact storage, lighting, and power access.",
+    "intro": "A small gaming desk gets better when every object earns its square inches. This starter page is still a placeholder article compared with the five priority reviews, but the core advice stands: reclaim space first, decorate later.",
     "reviewType": "research-based",
+    "quickVerdict": "Cable routing, monitor height, and reachable power are usually better first upgrades than decorative lights.",
     "bestFor": ["Small rooms", "Dorm desks", "Compact gaming setups"],
     "avoidIf": ["You want decorative-only desk gear", "You have no cable clutter problem"],
+    "topPicks": [
+      {
+        "slot": "First upgrade slot",
+        "name": "Under-desk cable tray",
+        "why": "It removes visual clutter and makes cleaning easier.",
+        "watchOut": "Check desk thickness and mounting method.",
+        "affiliateUrl": "https://www.amazon.com/s?k=under+desk+cable+tray"
+      }
+    ],
     "pros": ["Low-cost changes can make a desk feel larger", "Cable management improves cleaning and upgrades", "Vertical storage protects floor space"],
     "cons": ["Some clamps do not fit thick desks", "Cheap lights can cause glare", "Adhesive cable clips may fail over time"],
+    "buyingCriteria": ["Measure desk thickness before buying clamp-on accessories.", "Prioritize cable routing, monitor height, and power access.", "Avoid accessories that reduce mouse space.", "Use lighting to reduce eye strain, not just to glow."],
+    "commonMistakes": ["Buying decorative gear before solving cables.", "Adding a huge mousepad that covers cable exits.", "Forgetting clearance under the desk.", "Using weak adhesive clips on dusty surfaces."],
     "specs": {
       "priceTier": "Under $25 to $100",
       "connection": "Mixed accessories",
@@ -217,7 +399,7 @@
     "imageUrl": "",
     "imageAlt": "Small gaming desk upgrade product placeholder",
     "asin": "",
-    "officialProductUrl": "",
+    "officialProductUrl": "TODO - add official page for selected final product",
     "sourceUrls": [],
     "lastCheckedDate": "2026-05-27",
     "datePublished": "2026-05-27",

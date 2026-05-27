@@ -98,6 +98,43 @@
     `;
   }
 
+  function renderList(items) {
+    return (items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  }
+
+  function renderTopPicks(product) {
+    if (!product.topPicks || !product.topPicks.length) return "";
+    return `
+      <h2>Top picks</h2>
+      <div class="article-grid">
+        ${product.topPicks.map((pick) => `
+          <article class="article-card">
+            <p class="eyebrow">${escapeHtml(pick.slot || "Pick")}</p>
+            <h3>${escapeHtml(pick.name)}</h3>
+            <p>${escapeHtml(pick.why)}</p>
+            <p><strong>Watch out:</strong> ${escapeHtml(pick.watchOut || "Verify current specs, fit, and return policy before buying.")}</p>
+            <div class="affiliate-actions">
+              <a class="button secondary" href="${escapeHtml(pick.affiliateUrl || product.affiliateUrl)}" rel="nofollow sponsored noopener" target="_blank">Check current price</a>
+            </div>
+          </article>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  function renderSourceLinks(product) {
+    const sources = product.sourceUrls || [];
+    if (!sources.length) {
+      return "<p>Source links: TODO - add official product pages and current reputable review references before final monetized publishing.</p>";
+    }
+    return `
+      <h2>Source links</h2>
+      <ul>
+        ${sources.map((source) => `<li><a href="${escapeHtml(source.url)}" rel="noopener" target="_blank">${escapeHtml(source.label || source.url)}</a></li>`).join("")}
+      </ul>
+    `;
+  }
+
   function renderCards(target, products) {
     target.innerHTML = products.map(cardMarkup).join("");
   }
@@ -131,30 +168,33 @@
       <article class="prose">
         <p class="eyebrow">${escapeHtml(reviewTypeLabels[product.reviewType] || product.reviewType)}</p>
         <h1>${escapeHtml(product.title)}</h1>
-        <p>${escapeHtml(product.shortDescription)}</p>
+        <p>${escapeHtml(product.intro || product.shortDescription)}</p>
         <div class="meta-row">
           <span class="meta-pill">Last checked ${escapeHtml(product.lastCheckedDate)}</span>
           <span class="meta-pill">Updated ${escapeHtml(product.dateUpdated)}</span>
           <span class="meta-pill">${escapeHtml(product.category)}</span>
         </div>
         <h2>Quick take</h2>
-        <p>${escapeHtml(product.finalTake)}</p>
+        <p>${escapeHtml(product.quickVerdict || product.finalTake)}</p>
         <h2>Goblin read</h2>
         <p>${escapeHtml(goblinRead(product))}</p>
+        ${renderTopPicks(product)}
         <div class="two-column-list">
           <section>
             <h2>Pros</h2>
-            <ul>${(product.pros || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+            <ul>${renderList(product.pros)}</ul>
           </section>
           <section>
             <h2>Cons</h2>
-            <ul>${(product.cons || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+            <ul>${renderList(product.cons)}</ul>
           </section>
         </div>
         <h2>Best for</h2>
         <div class="tag-list">${(product.bestFor || []).map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div>
         <h2>Avoid if</h2>
         <div class="tag-list">${(product.avoidIf || []).map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div>
+        <h2>What matters when buying</h2>
+        <ul>${renderList(product.buyingCriteria)}</ul>
         <h2>Specs and checks</h2>
         <div class="table-wrap">
           <table>
@@ -163,10 +203,13 @@
             </tbody>
           </table>
         </div>
+        <h2>Common mistakes</h2>
+        <ul>${renderList(product.commonMistakes)}</ul>
         <h2>Alternatives</h2>
-        <ul>${(product.alternatives || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        <ul>${renderList(product.alternatives)}</ul>
         <h2>FAQ</h2>
         ${(product.faq || []).map((item) => `<h3>${escapeHtml(item.question)}</h3><p>${escapeHtml(item.answer)}</p>`).join("")}
+        ${renderSourceLinks(product)}
       </article>
       <aside class="review-sidebar">
         <div class="feature-panel">
@@ -226,7 +269,7 @@
 
     let products = [];
     try {
-      const response = await fetch(`${root}data/products.json?v=20260527-2`, { cache: "no-store" });
+      const response = await fetch(`${root}data/products.json?v=20260527-3`, { cache: "no-store" });
       products = await response.json();
     } catch (error) {
       targets.forEach((target) => {
