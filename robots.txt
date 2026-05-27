@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thegadgetgoblin.github.io/sitemap.xml

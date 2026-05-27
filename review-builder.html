@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Builder | Gadget Goblin</title>
+  <meta name="description" content="Build an honest research-based Gadget Goblin review draft from manually collected product notes.">
+  <link rel="canonical" href="https://thegadgetgoblin.github.io/review-builder.html">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="review-builder" data-root="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Gadget Goblin home"><span class="brand-mark" aria-hidden="true">GG</span><span><strong>Gadget Goblin</strong><small>Practical tech worth hoarding</small></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="reviews.html">Reviews</a><a href="deals.html">Deals</a><a href="best-lists.html">Best Lists</a><a href="comparisons.html">Comparisons</a><a href="about.html">About</a></nav>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <p class="eyebrow">Review builder</p>
+      <h1>Turn permitted research notes into an honest review draft.</h1>
+      <p>Paste your own notes from official specs, reputable reviews, and review themes you are allowed to use. This tool does not scrape Amazon or claim hands-on testing.</p>
+    </section>
+    <section class="section contact-layout" data-review-builder>
+      <form class="contact-form" action="#" method="post">
+        <label for="builder-product">Product or topic<input id="builder-product" name="product" type="text" placeholder="Example: Budget USB microphone for Discord"></label>
+        <label for="builder-url">Product or affiliate URL<input id="builder-url" name="url" type="url" placeholder="https://www.amazon.com/..."></label>
+        <label for="builder-best-for">Best for<input id="builder-best-for" name="bestFor" type="text" placeholder="Discord calls, beginner streamers, small desks"></label>
+        <label for="builder-positives">Repeated positive themes<textarea id="builder-positives" name="positives" rows="5" placeholder="Paste summarized themes, not copied review dumps."></textarea></label>
+        <label for="builder-negatives">Repeated negative themes<textarea id="builder-negatives" name="negatives" rows="5" placeholder="Common complaints, compatibility issues, support concerns."></textarea></label>
+        <label for="builder-specs">Official specs that matter<textarea id="builder-specs" name="specs" rows="5" placeholder="Connection type, wattage, dimensions, warranty, compatibility."></textarea></label>
+        <label for="builder-alternatives">Alternatives<textarea id="builder-alternatives" name="alternatives" rows="4" placeholder="Cheaper, better, safer, or more specialized alternatives."></textarea></label>
+        <button class="button primary" type="submit">Generate draft</button>
+      </form>
+      <aside class="feature-panel" data-builder-output hidden></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div><strong>Gadget Goblin</strong><p>As an Amazon Associate, Gadget Goblin may earn from qualifying purchases.</p></div><nav aria-label="Footer navigation"><a href="affiliate-disclosure.html">Affiliate Disclosure</a><a href="privacy-policy.html">Privacy Policy</a><a href="contact.html">Contact</a></nav></footer>
+  <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+  <script src="assets/js/site.js?v=20260527-2" defer></script>
+</body>
+</html>
