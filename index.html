@@ -10,14 +10,15 @@
   <meta property="og:description" content="Useful tech, gaming gear, and budget gadgets worth hoarding.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thegadgetgoblin.github.io/">
-  <meta property="og:image" content="https://thegadgetgoblin.github.io/assets/images/gadget-goblin-hero.png">
+  <meta property="og:image" content="https://thegadgetgoblin.github.io/assets/images/gadget-goblin-og.svg">
+  <link rel="icon" href="assets/images/gadget-goblin-logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body data-page="home" data-root="">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Gadget Goblin home">
-      <span class="brand-mark" aria-hidden="true">GG</span>
+      <img class="brand-logo" src="assets/images/gadget-goblin-logo.svg" alt="" width="44" height="44">
       <span>
         <strong>Gadget Goblin</strong>
         <small>Practical tech worth hoarding</small>
@@ -36,15 +37,15 @@
   <main id="main">
     <section class="hero">
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/images/gadget-goblin-hero.png" alt="">
+        <img src="assets/images/gadget-goblin-hero.svg" alt="">
       </div>
       <div class="hero-content">
         <p class="eyebrow">Research-based gear picks for normal budgets</p>
         <h1>Useful tech, gaming gear, and budget gadgets worth hoarding.</h1>
-        <p>Gadget Goblin digs through the noise to find practical tech upgrades, gaming accessories, desk gear, and weirdly useful gadgets that might actually be worth your money.</p>
+        <p>Gadget Goblin sorts practical upgrades by comfort, compatibility, value, and buyer-regret risk, with clear labels when a guide is research-based instead of hands-on.</p>
         <div class="button-row">
-          <a class="button primary" href="reviews.html">Browse reviews</a>
-          <a class="button secondary" href="deals.html">See deal picks</a>
+          <a class="button primary" href="reviews/budget-gaming-headsets-under-50.html">Read the headset guide</a>
+          <a class="button secondary" href="reviews.html">Browse reviews</a>
         </div>
       </div>
     </section>
@@ -56,12 +57,15 @@
     </section>
 
     <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Featured deal picks</p>
-        <h2>Hot gear worth a closer look</h2>
-        <a href="deals.html">All deals</a>
-      </div>
-      <div class="card-grid" data-render="featured-deals"></div>
+      <article class="feature-panel">
+        <p class="eyebrow">Flagship guide</p>
+        <h2>Best budget gaming headsets under $50</h2>
+        <p>The first polished guide compares five researched wired headset candidates by comfort, mic clarity, platform fit, common tradeoffs, and source links. It does not claim hands-on testing or list unstable prices.</p>
+        <div class="button-row">
+          <a class="button primary" href="reviews/budget-gaming-headsets-under-50.html">Read the guide</a>
+          <a class="button secondary" href="categories/audio-gear.html">Browse audio gear</a>
+        </div>
+      </article>
     </section>
 
     <section class="section">
@@ -79,12 +83,12 @@
         <h2>Start with what you actually need</h2>
       </div>
       <div class="category-grid">
-        <a class="category-card" href="categories/budget-gaming-gear.html">Budget gaming gear</a>
-        <a class="category-card" href="categories/pc-upgrades.html">PC upgrades</a>
-        <a class="category-card" href="categories/desk-setup-upgrades.html">Desk setup upgrades</a>
-        <a class="category-card" href="best-lists.html#power">Power gear</a>
-        <a class="category-card" href="categories/handheld-gaming.html">Handheld gaming</a>
-        <a class="category-card" href="comparisons.html">Head-to-head comparisons</a>
+        <a class="category-card" href="categories/budget-gaming-gear.html"><span class="category-icon"><img src="assets/images/icon-keyboard.svg" alt=""></span><span><strong>Budget gaming gear</strong><span>Headsets, keyboards, mics, and useful starter upgrades.</span></span></a>
+        <a class="category-card" href="categories/pc-upgrades.html"><span class="category-icon"><img src="assets/images/icon-usb-hub.svg" alt=""></span><span><strong>PC upgrades</strong><span>Small additions that clean up ports, cables, and setup friction.</span></span></a>
+        <a class="category-card" href="categories/desk-setup-upgrades.html"><span class="category-icon"><img src="assets/images/icon-desk.svg" alt=""></span><span><strong>Desk setup upgrades</strong><span>Compact fixes for clutter, height, lighting, and access.</span></span></a>
+        <a class="category-card" href="categories/audio-gear.html"><span class="category-icon"><img src="assets/images/icon-microphone.svg" alt=""></span><span><strong>Audio gear</strong><span>Clearer chat, starter mics, and headset tradeoffs.</span></span></a>
+        <a class="category-card" href="categories/handheld-gaming.html"><span class="category-icon"><img src="assets/images/icon-handheld.svg" alt=""></span><span><strong>Handheld gaming</strong><span>Steam Deck accessories and travel-friendly kit.</span></span></a>
+        <a class="category-card" href="comparisons.html"><span class="category-icon"><img src="assets/images/gadget-goblin-logo.svg" alt=""></span><span><strong>Comparisons</strong><span>Side-by-side context before you click.</span></span></a>
       </div>
     </section>
 
@@ -112,16 +116,13 @@
     <section class="section newsletter-section">
       <div>
         <p class="eyebrow">Newsletter</p>
-        <h2>Get a compact gear digest when it exists.</h2>
-        <p>No complicated funnel yet. This placeholder is ready for a real newsletter provider later.</p>
+        <h2>A compact gear digest is coming soon.</h2>
+        <p>No email collection is active yet. When a real provider is connected, this section can become a short opt-in with a privacy-policy update.</p>
       </div>
-      <form class="newsletter-form" action="#" method="post">
-        <label for="newsletter-email">Email address</label>
-        <div>
-          <input id="newsletter-email" type="email" name="email" placeholder="you@example.com">
-          <button class="button primary" type="submit">Join list</button>
-        </div>
-      </form>
+      <div class="newsletter-panel">
+        <p class="eyebrow">Not collecting emails</p>
+        <p>For now, the site focuses on publishing useful static guides and keeping affiliate disclosures clear.</p>
+      </div>
     </section>
   </main>
 
@@ -137,6 +138,6 @@
     </nav>
   </footer>
   <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
-  <script src="assets/js/site.js?v=20260527-4" defer></script>
+  <script src="assets/js/site.js?v=20260603-1" defer></script>
 </body>
 </html>

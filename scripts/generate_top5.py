@@ -1,4 +1,4 @@
-"""Placeholder for future editorial helpers.
+"""Reserved for future editorial helpers.
 
 Do not auto-generate affiliate pages or claim hands-on testing from this script.
 Use data/products.json plus templates/review-template.html for now.

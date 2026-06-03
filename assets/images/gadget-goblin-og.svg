@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Gadget Goblin social preview</title>
+  <desc id="desc">A dark tech-themed Gadget Goblin preview card with green and gold accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1200" y1="0" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07100c"/>
+      <stop offset=".65" stop-color="#111b15"/>
+      <stop offset="1" stop-color="#1a2418"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M58 70h1084v490H58Z" fill="none" stroke="#314934" stroke-width="8"/>
+  <path d="M0 482c144-46 267-56 386-30 177 39 296 25 447-50 117-58 261-64 367-29v257H0Z" fill="#0b1410"/>
+  <g transform="translate(820 145) scale(2.2)">
+    <rect width="96" height="96" rx="18" fill="#0f1d16"/>
+    <path d="M18 33 5 23l6 25Z" fill="#76d957" stroke="#d6f5a0" stroke-linejoin="round" stroke-width="3"/>
+    <path d="M78 33 91 23l-6 25Z" fill="#76d957" stroke="#d6f5a0" stroke-linejoin="round" stroke-width="3"/>
+    <path d="M25 38c0-15 10-25 23-25s23 10 23 25v17c0 17-11 27-23 27S25 72 25 55Z" fill="#76d957" stroke="#d6f5a0" stroke-width="3"/>
+    <path d="M23 44c-6 0-10 5-10 12s4 12 10 12h4V44Zm50 0h4c6 0 10 5 10 12s-4 12-10 12h-4Z" fill="#0f1d16" stroke="#e7bd5e" stroke-width="4"/>
+    <path d="M26 42c0-13 9-22 22-22s22 9 22 22" fill="none" stroke="#e7bd5e" stroke-linecap="round" stroke-width="5"/>
+    <path d="M34 49h14l-12 7Zm28 0H48l12 7Z" fill="#071008"/>
+    <path d="M38 70c7 5 17 5 24 0" fill="none" stroke="#071008" stroke-linecap="round" stroke-width="4"/>
+  </g>
+  <text x="92" y="194" fill="#8ee85f" font-family="Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="6">RESEARCH-BASED TECH PICKS</text>
+  <text x="92" y="306" fill="#f4f7f0" font-family="Arial, sans-serif" font-size="86" font-weight="900">Gadget Goblin</text>
+  <text x="96" y="382" fill="#d9e2d4" font-family="Arial, sans-serif" font-size="38" font-weight="700">Useful gear, budget upgrades, clear tradeoffs.</text>
+  <path d="M96 454h342" stroke="#e7bd5e" stroke-linecap="round" stroke-width="14"/>
+</svg>

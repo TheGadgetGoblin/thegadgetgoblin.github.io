@@ -19,7 +19,7 @@ For each pick, record:
 If the exact model is not finalized, keep:
 
 ```text
-Product slot - final model needed
+Research slot awaiting final model selection
 ```
 
 ## 2. Record Official Product URLs
@@ -91,7 +91,7 @@ imageAlt
 
 ## 6. Replace Affiliate Links Later
 
-Current links are search or placeholder links.
+Current links are non-tagged search links or official product pages.
 
 After approval, replace:
 

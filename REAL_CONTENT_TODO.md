@@ -1,11 +1,11 @@
-# Real Content TODO
+# Real Content Tasks
 
 Current state: the first five buyer guides are published as research-based drafts. They are useful, but not monetization-ready. The next milestone is one fully cleaned-up guide with exact product picks.
 
 ## Global Checklist
 
 - [ ] Choose exact products for each top-pick slot.
-- [ ] Replace every `Product slot - final model needed` status. Headset guide has no remaining final-model-needed slots.
+- [ ] Replace every research-slot status with an exact selected model. Headset guide has no remaining final-model-needed slots.
 - [ ] Add manufacturer/brand official product URLs.
 - [ ] Add verified ASINs only for exact Amazon listings.
 - [ ] Replace Amazon search URLs with approved affiliate links after approval.
@@ -36,8 +36,8 @@ Current state: the first five buyer guides are published as research-based draft
 - [ ] Replace search links with approved affiliate URLs later.
 - [ ] Verify current compatibility and model variants.
 - [ ] Verify that each selected model fits the budget target on the checked date.
- 
-Current headset status: `product-links-verified-pending-manual-asin-confirmation`. Keep `readyForAffiliateLinks` set to `false` until HyperX/Astro ASINs, approved affiliate links, allowed images, exact Amazon listings, and all final checks are complete.
+
+Current headset status: `candidate-links-need-affiliate-review`. Keep `readyForAffiliateLinks` set to `false` until HyperX/Astro ASINs, approved affiliate links, allowed images, exact Amazon listings, and all final checks are complete.
 
 ## Other Priority Guides
 

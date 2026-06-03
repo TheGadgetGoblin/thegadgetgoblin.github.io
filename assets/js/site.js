@@ -41,7 +41,7 @@
       if (!existing) {
         const note = document.createElement("p");
         note.className = "form-note affiliate-note";
-        note.textContent = "Placeholder form only. Connect a newsletter or form service before launch.";
+        note.textContent = "This form is not connected yet. Use the published contact method when one is added.";
         form.appendChild(note);
       }
     });
@@ -60,6 +60,12 @@
     return `${root}reviews/${product.slug}.html`;
   }
 
+  function assetUrl(value) {
+    if (!value) return "";
+    if (/^(https?:|data:|\/)/.test(value)) return value;
+    return `${root}${value}`;
+  }
+
   function scoreMarkup(score) {
     const safeScore = Number(score) || 0;
     const color = safeScore >= 85 ? "var(--green)" : safeScore >= 75 ? "var(--gold)" : "var(--red)";
@@ -67,9 +73,14 @@
   }
 
   function cardMarkup(product) {
-    const tags = [reviewTypeLabels[product.reviewType] || product.reviewType, product.specs?.priceTier, product.category].filter(Boolean);
+    const tags = [
+      reviewTypeLabels[product.reviewType] || product.reviewType,
+      product.productSelectionStatus === "research-outline" ? "Research outline" : "",
+      product.specs?.priceTier,
+      product.category
+    ].filter(Boolean);
     const visual = product.imageUrl
-      ? `<img src="${escapeHtml(product.imageUrl)}" alt="${escapeHtml(product.imageAlt || product.name)}">`
+      ? `<img src="${escapeHtml(assetUrl(product.imageUrl))}" alt="${escapeHtml(product.imageAlt || product.name)}">`
       : `<span>${escapeHtml(product.category)}</span>`;
     return `
       <article class="product-card" id="${escapeHtml(product.slug)}">
@@ -90,10 +101,13 @@
   }
 
   function affiliateButton(product) {
+    if (!product.affiliateUrl) {
+      return `<p class="affiliate-note">Buying links are intentionally omitted until the destination is reviewed.</p>`;
+    }
     return `
       <div class="affiliate-actions">
         <a class="button primary" href="${escapeHtml(product.affiliateUrl)}" rel="nofollow sponsored noopener" target="_blank">Check current price</a>
-        <span class="affiliate-note">${product.affiliateNetwork === "Amazon search placeholder" ? "Amazon search link. Replace with an approved affiliate link before publishing." : "Affiliate link. Check disclosure and date before publishing."}</span>
+        <span class="affiliate-note">${product.affiliateNetwork === "Amazon search link" ? "Search-result link. Verify exact model, seller, and price before buying." : "Commercial link. Check disclosure and date before buying."}</span>
       </div>
     `;
   }
@@ -104,8 +118,9 @@
 
   function renderTopPicks(product) {
     if (!product.topPicks || !product.topPicks.length) return "";
+    const outlineOnly = product.productSelectionStatus === "research-outline";
     return `
-      <h2>Top picks</h2>
+      <h2>${outlineOnly ? "Research focus" : "Top picks"}</h2>
       ${product.selectionNote ? `<div class="disclosure-banner">${escapeHtml(product.selectionNote)}</div>` : ""}
       <div class="article-grid">
         ${product.topPicks.map((pick) => `
@@ -114,18 +129,16 @@
             <h3>${escapeHtml(pick.productName || pick.name)}</h3>
             ${pick.slotStatus ? `<p><strong>Status:</strong> ${escapeHtml(pick.slotStatus)}</p>` : ""}
             <p>${escapeHtml(pick.why)}</p>
-            <p><strong>Best for:</strong> ${escapeHtml(pick.bestFor || "TODO - define best use case.")}</p>
+            ${pick.bestFor ? `<p><strong>Best for:</strong> ${escapeHtml(pick.bestFor)}</p>` : ""}
             <p><strong>Avoid if:</strong> ${escapeHtml(pick.avoidIf || pick.watchOut || "Verify current specs, fit, and return policy before buying.")}</p>
-            <p><strong>Official URL:</strong> ${pick.officialProductUrl && !pick.officialProductUrl.startsWith("TODO") ? `<a href="${escapeHtml(pick.officialProductUrl)}" rel="noopener" target="_blank">${escapeHtml(pick.officialProductUrl)}</a>` : "TODO - add official product URL"}</p>
-            <p><strong>ASIN:</strong> ${escapeHtml(pick.asin || "TODO")}</p>
+            ${pick.officialProductUrl ? `<p><strong>Official URL:</strong> <a href="${escapeHtml(pick.officialProductUrl)}" rel="noopener nofollow" target="_blank">${escapeHtml(pick.officialProductUrl)}</a></p>` : ""}
+            ${pick.asin ? `<p><strong>ASIN:</strong> ${escapeHtml(pick.asin)}</p>` : ""}
             <p><strong>Last checked:</strong> ${escapeHtml(pick.lastCheckedDate || product.lastCheckedDate)}</p>
             <h4>Pros</h4>
             <ul>${renderList(pick.pros)}</ul>
             <h4>Cons</h4>
             <ul>${renderList(pick.cons)}</ul>
-            <div class="affiliate-actions">
-              <a class="button secondary" href="${escapeHtml(pick.affiliateUrl || product.affiliateUrl)}" rel="nofollow sponsored noopener" target="_blank">Check current price</a>
-            </div>
+            ${outlineOnly || !(pick.affiliateUrl || pick.productSourceUrl) ? `<p class="affiliate-note">No buying button is shown for this research item yet.</p>` : `<div class="affiliate-actions"><a class="button secondary" href="${escapeHtml(pick.affiliateUrl || pick.productSourceUrl)}" rel="nofollow sponsored noopener" target="_blank">Check current price</a></div>`}
           </article>
         `).join("")}
       </div>
@@ -135,7 +148,7 @@
   function renderSourceLinks(product) {
     const sources = product.sourceUrls || [];
     if (!sources.length) {
-      return "<p>Source links: TODO - add official product pages and current reputable review references before final monetized publishing.</p>";
+      return "<h2>Source links</h2><p>Source links will be added when this guide is expanded.</p>";
     }
     return `
       <h2>Source links</h2>
@@ -150,12 +163,24 @@
   }
 
   function renderComparisonRows(target, products) {
+    const headsetGuide = products.find((product) => product.slug === "budget-gaming-headsets-under-50");
+    if (headsetGuide?.topPicks?.length) {
+      target.innerHTML = headsetGuide.topPicks.map((pick) => `
+      <tr>
+        <td><strong>${escapeHtml(pick.productName || pick.name)}</strong><br><span class="affiliate-note">${escapeHtml(pick.pickLabel || pick.slot || "Research pick")}</span></td>
+        <td>${escapeHtml(pick.bestFor || "Check the guide for fit notes.")}</td>
+        <td>${escapeHtml(pick.avoidIf || pick.watchOut || "Verify platform, comfort, and retailer details.")}</td>
+        <td>${escapeHtml(pick.lastCheckedDate || headsetGuide.lastCheckedDate)}</td>
+      </tr>
+    `).join("");
+      return;
+    }
     target.innerHTML = products.slice(0, 4).map((product) => `
       <tr>
         <td><strong>${escapeHtml(product.name)}</strong></td>
         <td>${escapeHtml((product.bestFor || []).slice(0, 2).join(", "))}</td>
         <td>${escapeHtml((product.avoidIf || []).slice(0, 2).join(", "))}</td>
-        <td>${escapeHtml(reviewTypeLabels[product.reviewType] || product.reviewType)}</td>
+        <td>${escapeHtml(product.lastCheckedDate)}</td>
       </tr>
     `).join("");
   }
@@ -185,7 +210,7 @@
           <span class="meta-pill">${escapeHtml(product.category)}</span>
           <span class="meta-pill">${product.readyForAffiliateLinks ? "Ready for affiliate links" : "Affiliate prep needed"}</span>
         </div>
-        ${product.productSelectionStatus === "manual-selection-needed" ? `<div class="disclosure-banner">Manual Product Selection Needed: exact products, official links, ASINs, approved images, and affiliate links still need to be finalized before monetization.</div>` : ""}
+        ${product.selectionNote ? `<div class="disclosure-banner">${escapeHtml(product.selectionNote)}</div>` : ""}
         <h2>Quick take</h2>
         <p>${escapeHtml(product.quickVerdict || product.finalTake)}</p>
         <h2>Goblin read</h2>
@@ -285,7 +310,7 @@
       products = await response.json();
     } catch (error) {
       targets.forEach((target) => {
-        target.innerHTML = "<p>Product data could not load. Preview this site through a local web server instead of opening files directly.</p>";
+        target.innerHTML = "<p>Product data could not load. Start a local web server and reload the page.</p>";
       });
       return;
     }

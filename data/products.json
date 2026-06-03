@@ -27,16 +27,16 @@
         "slot": "Best overall budget headset",
         "isFinalProduct": true,
         "finalModelNeeded": false,
-        "slotStatus": "Product link verified - affiliate/image replacement needed",
+        "slotStatus": "Official product link verified; affiliate link and approved image still need review",
         "bestFor": "Budget PC/console gamers who want a lightweight wired headset with a strong mic-focused gaming setup.",
         "avoidIf": "You want wireless audio, Bluetooth, a detachable mic, or a less gamer-styled design.",
         "officialProductUrl": "https://www.razer.com/gaming-headsets/razer-blackshark-v2-x",
         "productSourceUrl": "https://www.amazon.com/dp/B086PKMZ21",
-        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
+        "affiliateUrl": "",
         "asin": "B086PKMZ21",
-        "imageUrl": "",
-        "imageAlt": "Placeholder image for Razer BlackShark V2 X gaming headset",
-        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
+        "imageUrl": "assets/images/icon-headset.svg",
+        "imageAlt": "Original illustrated gaming headset icon",
+        "allowedImageSource": "Original repo illustration is used until owner-created, manufacturer-permitted, or approved API product media is available.",
         "sourceUrls": [
           {
             "label": "Razer BlackShark V2 X official product page",
@@ -80,16 +80,16 @@
         "slot": "Best mic/comfort value",
         "isFinalProduct": true,
         "finalModelNeeded": false,
-        "slotStatus": "Product link verified - exact Amazon listing/ASIN still needed",
+        "slotStatus": "Official product link verified; exact retailer listing still needs review",
         "bestFor": "Gamers who want a simple wired headset from a known brand with comfort-focused padding and a flexible mic.",
         "avoidIf": "You need wireless, premium build quality, or confirmed console-specific packaging.",
         "officialProductUrl": "https://row.hyperx.com/products/hyperx-cloud-stinger-2",
-        "productSourceUrl": "TODO_CONFIRM_EXACT_AMAZON_LISTING - candidates mentioned: B0B8PGDMWK and B0BQ5G78QR",
-        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
-        "asin": "TODO_CONFIRM_EXACT_LISTING",
-        "imageUrl": "",
-        "imageAlt": "Placeholder image for HyperX Cloud Stinger 2 wired gaming headset",
-        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
+        "productSourceUrl": "",
+        "affiliateUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-headset.svg",
+        "imageAlt": "Original illustrated gaming headset icon",
+        "allowedImageSource": "Original repo illustration is used until owner-created, manufacturer-permitted, or approved API product media is available.",
         "sourceUrls": [
           {
             "label": "HyperX Cloud Stinger 2 wired official product page",
@@ -128,16 +128,16 @@
         "slot": "Best for PC surround/software features",
         "isFinalProduct": true,
         "finalModelNeeded": false,
-        "slotStatus": "Product link verified - affiliate/image replacement needed",
+        "slotStatus": "Official product link verified; affiliate link and approved image still need review",
         "bestFor": "PC gamers who want a cheap wired Logitech headset with USB DAC, G HUB, and DTS software features.",
         "avoidIf": "You want the best comfort/build quality, wireless, or a modern minimalist design.",
         "officialProductUrl": "https://www.logitechg.com/en-us/products/gaming-audio/g432-7-1-surround-sound-gaming-headset.981-000769.html",
         "productSourceUrl": "https://www.amazon.com/dp/B07MRMHML9",
-        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
+        "affiliateUrl": "",
         "asin": "B07MRMHML9",
-        "imageUrl": "",
-        "imageAlt": "Placeholder image for Logitech G432 wired gaming headset",
-        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
+        "imageUrl": "assets/images/icon-headset.svg",
+        "imageAlt": "Original illustrated gaming headset icon",
+        "allowedImageSource": "Original repo illustration is used until owner-created, manufacturer-permitted, or approved API product media is available.",
         "sourceUrls": [
           {
             "label": "Logitech G432 official product page",
@@ -179,16 +179,16 @@
         "slot": "Best ultra-cheap option",
         "isFinalProduct": true,
         "finalModelNeeded": false,
-        "slotStatus": "Product link verified - affiliate/image replacement needed",
+        "slotStatus": "Official product link verified; affiliate link and approved image still need review",
         "bestFor": "Buyers who want the cheapest reasonable wired gaming headset from a known brand.",
         "avoidIf": "You want premium comfort, detachable cables, wireless, or stronger mic/audio quality.",
         "officialProductUrl": "https://www.turtlebeach.com/products/recon-70-headset",
         "productSourceUrl": "https://www.amazon.com/dp/B07NQXBZM9",
-        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
+        "affiliateUrl": "",
         "asin": "B07NQXBZM9",
-        "imageUrl": "",
-        "imageAlt": "Placeholder image for Turtle Beach Recon 70 multiplatform gaming headset",
-        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
+        "imageUrl": "assets/images/icon-headset.svg",
+        "imageAlt": "Original illustrated gaming headset icon",
+        "allowedImageSource": "Original repo illustration is used until owner-created, manufacturer-permitted, or approved API product media is available.",
         "sourceUrls": [
           {
             "label": "Turtle Beach Recon 70 official product page",
@@ -228,16 +228,16 @@
         "slot": "Best console-friendly option",
         "isFinalProduct": true,
         "finalModelNeeded": false,
-        "slotStatus": "Product link verified - exact Amazon listing/ASIN still needed",
+        "slotStatus": "Official product link verified; exact retailer listing still needs review",
         "bestFor": "Console players who want a simple 3.5mm wired headset that works across major platforms.",
         "avoidIf": "You need wireless, USB-only features, detachable microphone, or premium audio tuning.",
         "officialProductUrl": "https://www.logitechg.com/en-us/products/gaming-audio/a10-gen-2.939-002052.html",
-        "productSourceUrl": "TODO_CONFIRM_EXACT_AMAZON_LISTING - candidates mentioned: B07W6HDNPF, B0CLFJ9NCX, and older/general A10 listings",
-        "affiliateUrl": "PLACEHOLDER_AFFILIATE_LINK",
-        "asin": "TODO_CONFIRM_EXACT_LISTING",
-        "imageUrl": "",
-        "imageAlt": "Placeholder image for Logitech G Astro A10 Gen 2 wired gaming headset",
-        "allowedImageSource": "Placeholder only for now; later replace with original photo, manufacturer-permitted media, or approved Amazon API/PA API image.",
+        "productSourceUrl": "",
+        "affiliateUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-headset.svg",
+        "imageAlt": "Original illustrated gaming headset icon",
+        "allowedImageSource": "Original repo illustration is used until owner-created, manufacturer-permitted, or approved API product media is available.",
         "sourceUrls": [
           {
             "label": "Logitech G Astro A10 Gen 2 official product page",
@@ -298,12 +298,12 @@
       "keyChecks": "Mic clarity, clamp force, platform support, cable quality"
     },
     "goblinScore": 84,
-    "affiliateNetwork": "Amazon search placeholder",
+    "affiliateNetwork": "Amazon search link",
     "affiliateUrl": "https://www.amazon.com/s?k=best+budget+gaming+headset+under+50",
-    "imageUrl": "",
-    "imageAlt": "Budget gaming headset product placeholder",
+    "imageUrl": "assets/images/icon-headset.svg",
+    "imageAlt": "Original illustrated gaming headset icon",
     "asin": "",
-    "officialProductUrl": "TODO - add official page for selected final product",
+    "officialProductUrl": "",
     "sourceUrls": [
       {
         "label": "RTINGS budget gaming headsets guide",
@@ -342,12 +342,12 @@
       }
     ],
     "readyForAffiliateLinks": false,
-    "productSelectionStatus": "product-links-verified-pending-manual-asin-confirmation",
-    "selectionNote": "This guide has finalized candidate models, but affiliate links, ASINs, and approved product images still need manual replacement before monetization.",
+    "productSelectionStatus": "candidate-links-need-affiliate-review",
+    "selectionNote": "Candidate models are selected from research sources. Current buttons use official pages, retailer product pages, or search links; verify the exact model, seller, warranty, and price before buying.",
     "manualSelectionChecklist": [
       "Confirm HyperX Cloud Stinger 2 exact Amazon listing and ASIN.",
       "Confirm Logitech G Astro A10 Gen 2 exact Amazon listing and ASIN.",
-      "Replace placeholder affiliate URLs only after Amazon Associates approval.",
+      "Replace approved affiliate URLs only after Amazon Associates approval.",
       "Add allowed product images from original photos, manufacturer-permitted media, or approved Amazon API/PA API image sources.",
       "Re-check each source and listing before changing this guide to affiliate-ready."
     ]
@@ -383,13 +383,13 @@
         "pickLabel": "Best simple wired comparison point",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "Keychron's budget wired boards are useful reference points because they keep the feature set practical: standard layouts, mechanical switches, and less gamer glitter.",
         "avoidIf": "Check the exact layout, switch, backlight, and hot-swap status before buying.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Keychron C1 Pro / C2 Pro family product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-keyboard.svg",
+        "imageAlt": "Original illustrated mechanical keyboard icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "Keychron's budget wired boards are useful reference points because they keep the feature set practical: standard layouts, mechanical switches, and less gamer glitter.",
@@ -398,7 +398,8 @@
         ],
         "cons": [
           "Check the exact layout, switch, backlight, and hot-swap status before buying."
-        ]
+        ],
+        "productSourceUrl": ""
       },
       {
         "slot": "Compact budget gaming slot",
@@ -410,13 +411,13 @@
         "pickLabel": "Compact budget gaming slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "Compact boards leave more mouse space, which matters on small gaming desks.",
         "avoidIf": "A tiny layout can be annoying if you use function keys, arrow keys, or number entry every day.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "60 percent or 75 percent budget mechanical keyboard product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-keyboard.svg",
+        "imageAlt": "Original illustrated mechanical keyboard icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "Compact boards leave more mouse space, which matters on small gaming desks.",
@@ -425,7 +426,8 @@
         ],
         "cons": [
           "A tiny layout can be annoying if you use function keys, arrow keys, or number entry every day."
-        ]
+        ],
+        "productSourceUrl": ""
       },
       {
         "slot": "Tinker-friendly slot",
@@ -437,13 +439,13 @@
         "pickLabel": "Tinker-friendly slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "Hot-swap sockets are worth considering if you want to replace switches later instead of replacing the whole board.",
         "avoidIf": "Very cheap hot-swap boards can still have weak stabilizers and rough software.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Cheap hot-swap mechanical keyboard product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-keyboard.svg",
+        "imageAlt": "Original illustrated mechanical keyboard icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "Hot-swap sockets are worth considering if you want to replace switches later instead of replacing the whole board.",
@@ -452,7 +454,8 @@
         ],
         "cons": [
           "Very cheap hot-swap boards can still have weak stabilizers and rough software."
-        ]
+        ],
+        "productSourceUrl": ""
       }
     ],
     "pros": [
@@ -483,12 +486,12 @@
       "keyChecks": "Switch type, stabilizers, layout, keycap quality"
     },
     "goblinScore": 82,
-    "affiliateNetwork": "Amazon search placeholder",
+    "affiliateNetwork": "Amazon search link",
     "affiliateUrl": "https://www.amazon.com/s?k=cheap+mechanical+keyboard+gaming",
-    "imageUrl": "",
-    "imageAlt": "Budget mechanical keyboard product placeholder",
+    "imageUrl": "assets/images/icon-keyboard.svg",
+    "imageAlt": "Original illustrated mechanical keyboard icon",
     "asin": "",
-    "officialProductUrl": "TODO - add official page for selected final product",
+    "officialProductUrl": "",
     "sourceUrls": [
       {
         "label": "Tom's Hardware budget mechanical keyboard guide",
@@ -523,8 +526,8 @@
       }
     ],
     "readyForAffiliateLinks": false,
-    "productSelectionStatus": "manual-selection-needed",
-    "selectionNote": "Some product slots are placeholders until final models, official links, and approved affiliate links are added.",
+    "productSelectionStatus": "research-outline",
+    "selectionNote": "This guide is a public research outline. Product picks are not final yet, so buying buttons are intentionally omitted.",
     "manualSelectionChecklist": [
       "Choose exact product model names for every top pick.",
       "Add official product URLs from the manufacturer or brand.",
@@ -565,13 +568,13 @@
         "pickLabel": "Most useful first buy",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "A properly rated cable or adapter can make charging and couch play less awkward without adding bulk.",
         "avoidIf": "Verify wattage and data rating. Avoid mystery cables with vague specs.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Rated USB-C cable or right-angle adapter product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-handheld.svg",
+        "imageAlt": "Original illustrated handheld gaming icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "A properly rated cable or adapter can make charging and couch play less awkward without adding bulk.",
@@ -580,7 +583,8 @@
         ],
         "cons": [
           "Verify wattage and data rating. Avoid mystery cables with vague specs."
-        ]
+        ],
+        "productSourceUrl": ""
       },
       {
         "slot": "Travel quality-of-life pick",
@@ -592,13 +596,13 @@
         "pickLabel": "Travel quality-of-life pick",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "A smaller case can be more useful than the stock case for backpacks and daily carry.",
         "avoidIf": "Check whether it protects sticks and triggers, not just the shell.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Slim carrying case or pouch product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-handheld.svg",
+        "imageAlt": "Original illustrated handheld gaming icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "A smaller case can be more useful than the stock case for backpacks and daily carry.",
@@ -607,7 +611,8 @@
         ],
         "cons": [
           "Check whether it protects sticks and triggers, not just the shell."
-        ]
+        ],
+        "productSourceUrl": ""
       },
       {
         "slot": "Desk and nightstand pick",
@@ -619,13 +624,13 @@
         "pickLabel": "Desk and nightstand pick",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "A stand makes updates, downloads, controller play, and video watching easier.",
         "avoidIf": "Avoid stands that block rear vents or press awkwardly against the grips.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Compact stand product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-handheld.svg",
+        "imageAlt": "Original illustrated handheld gaming icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "A stand makes updates, downloads, controller play, and video watching easier.",
@@ -634,7 +639,8 @@
         ],
         "cons": [
           "Avoid stands that block rear vents or press awkwardly against the grips."
-        ]
+        ],
+        "productSourceUrl": ""
       }
     ],
     "pros": [
@@ -665,12 +671,12 @@
       "keyChecks": "Wattage, cable rating, fit, heat clearance"
     },
     "goblinScore": 85,
-    "affiliateNetwork": "Amazon search placeholder",
+    "affiliateNetwork": "Amazon search link",
     "affiliateUrl": "https://www.amazon.com/s?k=steam+deck+accessories+under+30",
-    "imageUrl": "",
-    "imageAlt": "Steam Deck accessory product placeholder",
+    "imageUrl": "assets/images/icon-handheld.svg",
+    "imageAlt": "Original illustrated handheld gaming icon",
     "asin": "",
-    "officialProductUrl": "TODO - add official page for selected final accessory",
+    "officialProductUrl": "",
     "sourceUrls": [
       {
         "label": "PC Gamer Steam Deck accessories guide",
@@ -701,8 +707,8 @@
       }
     ],
     "readyForAffiliateLinks": false,
-    "productSelectionStatus": "manual-selection-needed",
-    "selectionNote": "Some product slots are placeholders until final models, official links, and approved affiliate links are added.",
+    "productSelectionStatus": "research-outline",
+    "selectionNote": "This guide is a public research outline. Product picks are not final yet, so buying buttons are intentionally omitted.",
     "manualSelectionChecklist": [
       "Choose exact product model names for every top pick.",
       "Add official product URLs from the manufacturer or brand.",
@@ -743,13 +749,13 @@
         "pickLabel": "Simple desk hub slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "Good for controllers, wireless dongles, USB lights, and quick-access desk ports.",
         "avoidIf": "Do not overload it with several storage drives or high-draw devices.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "4-port USB-A or USB-C hub product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-usb-hub.svg",
+        "imageAlt": "Original illustrated USB hub icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "Good for controllers, wireless dongles, USB lights, and quick-access desk ports.",
@@ -758,7 +764,8 @@
         ],
         "cons": [
           "Do not overload it with several storage drives or high-draw devices."
-        ]
+        ],
+        "productSourceUrl": ""
       },
       {
         "slot": "Powered hub slot",
@@ -770,13 +777,13 @@
         "pickLabel": "Powered hub slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "A powered hub is the safer choice when you have many peripherals or devices that disconnect from power dips.",
         "avoidIf": "Check the included power adapter and port speeds.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Powered 7-port or 10-port USB hub product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-usb-hub.svg",
+        "imageAlt": "Original illustrated USB hub icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "A powered hub is the safer choice when you have many peripherals or devices that disconnect from power dips.",
@@ -785,7 +792,8 @@
         ],
         "cons": [
           "Check the included power adapter and port speeds."
-        ]
+        ],
+        "productSourceUrl": ""
       },
       {
         "slot": "Compact USB-C slot",
@@ -797,13 +805,13 @@
         "pickLabel": "Compact USB-C slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "Useful if your PC or laptop has USB-C and you mainly need quick peripheral access.",
         "avoidIf": "Many compact hubs are laptop-oriented and may include ports you do not need.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "USB-C hub with USB-A ports product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-usb-hub.svg",
+        "imageAlt": "Original illustrated USB hub icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "Useful if your PC or laptop has USB-C and you mainly need quick peripheral access.",
@@ -812,7 +820,8 @@
         ],
         "cons": [
           "Many compact hubs are laptop-oriented and may include ports you do not need."
-        ]
+        ],
+        "productSourceUrl": ""
       }
     ],
     "pros": [
@@ -843,12 +852,12 @@
       "keyChecks": "Powered vs unpowered, port speed, cable length, mounting"
     },
     "goblinScore": 83,
-    "affiliateNetwork": "Amazon search placeholder",
+    "affiliateNetwork": "Amazon search link",
     "affiliateUrl": "https://www.amazon.com/s?k=usb+hub+for+gaming+pc",
-    "imageUrl": "",
-    "imageAlt": "USB hub product placeholder",
+    "imageUrl": "assets/images/icon-usb-hub.svg",
+    "imageAlt": "Original illustrated USB hub icon",
     "asin": "",
-    "officialProductUrl": "TODO - add official page for selected final hub",
+    "officialProductUrl": "",
     "sourceUrls": [
       {
         "label": "Tom's Hardware USB hub guide",
@@ -880,8 +889,8 @@
       }
     ],
     "readyForAffiliateLinks": false,
-    "productSelectionStatus": "manual-selection-needed",
-    "selectionNote": "Some product slots are placeholders until final models, official links, and approved affiliate links are added.",
+    "productSelectionStatus": "research-outline",
+    "selectionNote": "This guide is a public research outline. Product picks are not final yet, so buying buttons are intentionally omitted.",
     "manualSelectionChecklist": [
       "Choose exact product model names for every top pick.",
       "Add official product URLs from the manufacturer or brand.",
@@ -922,13 +931,13 @@
         "pickLabel": "Budget plug-and-play slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "PC Gamer calls out an Amazon Basics USB condenser option as a budget microphone type worth considering, and the simple USB/cardioid formula fits Discord buyers.",
         "avoidIf": "Verify the exact model, return policy, and whether the stand works for your desk.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Amazon Basics USB Condenser-style mic product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-microphone.svg",
+        "imageAlt": "Original illustrated USB microphone icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "PC Gamer calls out an Amazon Basics USB condenser option as a budget microphone type worth considering, and the simple USB/cardioid formula fits Discord buyers.",
@@ -937,7 +946,8 @@
         ],
         "cons": [
           "Verify the exact model, return policy, and whether the stand works for your desk."
-        ]
+        ],
+        "productSourceUrl": ""
       },
       {
         "slot": "Gaming-brand budget slot",
@@ -949,13 +959,13 @@
         "pickLabel": "Gaming-brand budget slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "A small USB mic with mute control is a practical upgrade for basic voice chat and beginner streaming.",
         "avoidIf": "Budget stands can transmit desk vibration, so plan for placement or a boom arm later.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "HyperX SoloCast / SoloCast 2-style USB mic product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-microphone.svg",
+        "imageAlt": "Original illustrated USB microphone icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "A small USB mic with mute control is a practical upgrade for basic voice chat and beginner streaming.",
@@ -964,7 +974,8 @@
         ],
         "cons": [
           "Budget stands can transmit desk vibration, so plan for placement or a boom arm later."
-        ]
+        ],
+        "productSourceUrl": ""
       },
       {
         "slot": "Cleaner desk setup slot",
@@ -976,13 +987,13 @@
         "pickLabel": "Cleaner desk setup slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "Tom's Hardware highlights budget-friendly plug-and-play USB microphones in this category, and the Wave Neo-style setup is aimed at simple creator desks.",
         "avoidIf": "Check whether the price still fits your budget and whether cheaper options are good enough.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Elgato Wave Neo-style USB mic product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-microphone.svg",
+        "imageAlt": "Original illustrated USB microphone icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "Tom's Hardware highlights budget-friendly plug-and-play USB microphones in this category, and the Wave Neo-style setup is aimed at simple creator desks.",
@@ -991,7 +1002,8 @@
         ],
         "cons": [
           "Check whether the price still fits your budget and whether cheaper options are good enough."
-        ]
+        ],
+        "productSourceUrl": ""
       }
     ],
     "pros": [
@@ -1022,12 +1034,12 @@
       "keyChecks": "Pickup pattern, gain control, monitoring, stand quality"
     },
     "goblinScore": 84,
-    "affiliateNetwork": "Amazon search placeholder",
+    "affiliateNetwork": "Amazon search link",
     "affiliateUrl": "https://www.amazon.com/s?k=budget+usb+microphone+discord+streaming",
-    "imageUrl": "",
-    "imageAlt": "Budget USB microphone product placeholder",
+    "imageUrl": "assets/images/icon-microphone.svg",
+    "imageAlt": "Original illustrated USB microphone icon",
     "asin": "",
-    "officialProductUrl": "TODO - add official page for selected final microphone",
+    "officialProductUrl": "",
     "sourceUrls": [
       {
         "label": "Tom's Hardware gaming microphones guide",
@@ -1059,8 +1071,8 @@
       }
     ],
     "readyForAffiliateLinks": false,
-    "productSelectionStatus": "manual-selection-needed",
-    "selectionNote": "Some product slots are placeholders until final models, official links, and approved affiliate links are added.",
+    "productSelectionStatus": "research-outline",
+    "selectionNote": "This guide is a public research outline. Product picks are not final yet, so buying buttons are intentionally omitted.",
     "manualSelectionChecklist": [
       "Choose exact product model names for every top pick.",
       "Add official product URLs from the manufacturer or brand.",
@@ -1078,7 +1090,7 @@
     "category": "Desk setup upgrades",
     "categorySlug": "desk-setup-upgrades",
     "shortDescription": "A practical starter guide for cable routing, monitor height, compact storage, lighting, and power access.",
-    "intro": "A small gaming desk gets better when every object earns its square inches. This starter page is still a placeholder article compared with the five priority reviews, but the core advice stands: reclaim space first, decorate later.",
+    "intro": "A small gaming desk gets better when every object earns its square inches. This starter page is still a early research outline compared with the flagship guide, but the core advice stands: reclaim space first, decorate later.",
     "reviewType": "research-based",
     "quickVerdict": "Cable routing, monitor height, and reachable power are usually better first upgrades than decorative lights.",
     "bestFor": [
@@ -1101,13 +1113,13 @@
         "pickLabel": "First upgrade slot",
         "isFinalProduct": false,
         "finalModelNeeded": true,
-        "slotStatus": "Product slot - final model needed",
+        "slotStatus": "Research slot awaiting final model selection",
         "bestFor": "It removes visual clutter and makes cleaning easier.",
         "avoidIf": "Check desk thickness and mounting method.",
-        "officialProductUrl": "TODO - add official product URL",
-        "asin": "TODO",
-        "imageUrl": "",
-        "imageAlt": "Under-desk cable tray product image placeholder",
+        "officialProductUrl": "",
+        "asin": "",
+        "imageUrl": "assets/images/icon-desk.svg",
+        "imageAlt": "Original illustrated desk setup icon",
         "sourceUrls": [],
         "lastCheckedDate": "2026-05-27",
         "researchNotes": "It removes visual clutter and makes cleaning easier.",
@@ -1116,7 +1128,8 @@
         ],
         "cons": [
           "Check desk thickness and mounting method."
-        ]
+        ],
+        "productSourceUrl": ""
       }
     ],
     "pros": [
@@ -1147,12 +1160,12 @@
       "keyChecks": "Desk thickness, cable length, mounting method, power access"
     },
     "goblinScore": 86,
-    "affiliateNetwork": "Amazon search placeholder",
+    "affiliateNetwork": "Amazon search link",
     "affiliateUrl": "https://www.amazon.com/s?k=small+gaming+desk+setup+upgrades",
-    "imageUrl": "",
-    "imageAlt": "Small gaming desk upgrade product placeholder",
+    "imageUrl": "assets/images/icon-desk.svg",
+    "imageAlt": "Original illustrated desk setup icon",
     "asin": "",
-    "officialProductUrl": "TODO - add official page for selected final product",
+    "officialProductUrl": "",
     "sourceUrls": [],
     "lastCheckedDate": "2026-05-27",
     "datePublished": "2026-05-27",
@@ -1170,8 +1183,8 @@
       }
     ],
     "readyForAffiliateLinks": false,
-    "productSelectionStatus": "manual-selection-needed",
-    "selectionNote": "Some product slots are placeholders until final models, official links, and approved affiliate links are added.",
+    "productSelectionStatus": "research-outline",
+    "selectionNote": "This guide is a public research outline. Product picks are not final yet, so buying buttons are intentionally omitted.",
     "manualSelectionChecklist": [
       "Choose exact product model names for every top pick.",
       "Add official product URLs from the manufacturer or brand.",

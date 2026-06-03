@@ -2,7 +2,7 @@
 
 Gadget Goblin is a mobile-first, content-first affiliate tech website focused on useful gadgets, budget gaming gear, PC upgrades, desk setup upgrades, power gear, weird but practical tech, hot product roundups, and research-based recommendations.
 
-The site is intentionally simple: plain HTML, CSS, JavaScript, and JSON. There is no backend, database, login system, shopping cart, or build step.
+The site is intentionally simple: plain HTML, CSS, JavaScript, JSON, and an optional Node script that bakes review pages into static HTML. There is no backend, database, login system, shopping cart, or package system.
 
 ## Project Status
 
@@ -10,7 +10,7 @@ The site is intentionally simple: plain HTML, CSS, JavaScript, and JSON. There i
 - Data: `data/products.json`
 - Host target: GitHub Pages
 - Expected public URL for this repo name: `https://thegadgetgoblin.github.io/`
-- Current local folder is not a Git repo. It appears to be a downloaded ZIP or copied folder.
+- Review pages: generated static HTML committed under `reviews/`
 
 ## Local Preview
 
@@ -72,24 +72,22 @@ Do not use `hands-on` unless the product was actually tested.
 
 1. Add the product or review entry to `data/products.json`.
 2. Choose a unique `slug`.
-3. Copy `templates/review-template.html` into `reviews/your-slug.html`.
-4. Replace `REVIEW_TITLE`, `REVIEW_DESCRIPTION`, and `REVIEW_SLUG`.
-5. Add the new page URL to `sitemap.xml`.
-6. Link to it from `reviews.html`, a best list, or the homepage if it should be featured.
+3. Run the review builder:
 
-For cards only, adding the JSON entry is enough. For a standalone review page, create the HTML file too.
+```powershell
+node scripts/build-reviews.js
+```
+
+4. Add the new page URL to `sitemap.xml`.
+5. Link to it from `reviews.html`, a best list, or the homepage if it should be featured.
+
+For cards only, adding the JSON entry is enough. For a standalone review page, run the builder and commit the generated HTML.
 
 ## Affiliate Links
 
-Replace placeholder URLs like:
-
-```text
-https://example.com/replace-with-affiliate-link
-```
-
 Use official affiliate links only. Do not invent Amazon affiliate IDs. Do not scrape Amazon or Amazon user reviews. Do not display exact prices unless you manually add a price field and update `lastCheckedDate`.
 
-Current starter buttons use non-affiliate Amazon search URLs so the preview is clickable. Replace those with approved affiliate links before launch.
+Some current buttons use non-tagged retailer pages or Amazon search URLs so readers can verify current details. Replace them with approved affiliate links only after the destination and affiliate program requirements are confirmed.
 
 Recommended button text:
 
@@ -145,7 +143,7 @@ In GitHub, confirm Pages is set to deploy from:
 
 ## Monetization Checklist
 
-- Replace every placeholder affiliate URL.
+- Replace every non-tagged retailer/search URL with an approved affiliate URL when ready.
 - Confirm disclosures appear near affiliate-heavy sections.
 - Review the Affiliate Disclosure page.
 - Add a real contact method.
@@ -153,12 +151,11 @@ In GitHub, confirm Pages is set to deploy from:
 - Do not use Amazon product images unless through an approved official method.
 - Do not claim hands-on testing unless you actually tested the product.
 
-## Remaining TODOs
+## Remaining Launch Tasks
 
-- Replace placeholder affiliate links.
+- Replace non-tagged retailer/search links with approved affiliate links when ready.
 - Add real product-level reviews for the highest-priority categories.
-- Connect the newsletter placeholder to a provider.
-- Connect the contact form or replace it with an email link.
+- Add a contact email or connect a real form provider.
 - Add analytics only after updating the privacy policy.
-- Expand standalone review pages beyond the first starter page.
+- Expand research-outline pages into finalized guides.
 - Consider custom product images or approved merchant images later.

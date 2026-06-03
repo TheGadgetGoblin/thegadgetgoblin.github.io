@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated mechanical keyboard</title>
+  <desc id="desc">A simple original keyboard icon for budget keyboard guides.</desc>
+  <rect width="640" height="420" rx="28" fill="#0f1d16"/>
+  <rect x="76" y="105" width="488" height="210" rx="28" fill="#14231b" stroke="#8ee85f" stroke-width="14"/>
+  <g fill="#26392d">
+    <rect x="112" y="140" width="54" height="42" rx="8"/>
+    <rect x="184" y="140" width="54" height="42" rx="8"/>
+    <rect x="256" y="140" width="54" height="42" rx="8"/>
+    <rect x="328" y="140" width="54" height="42" rx="8"/>
+    <rect x="400" y="140" width="54" height="42" rx="8"/>
+    <rect x="472" y="140" width="54" height="42" rx="8"/>
+    <rect x="112" y="202" width="54" height="42" rx="8"/>
+    <rect x="184" y="202" width="126" height="42" rx="8"/>
+    <rect x="328" y="202" width="54" height="42" rx="8"/>
+    <rect x="400" y="202" width="126" height="42" rx="8"/>
+    <rect x="112" y="264" width="238" height="42" rx="8"/>
+    <rect x="368" y="264" width="158" height="42" rx="8"/>
+  </g>
+  <path d="M112 196h414" stroke="#e7bd5e" stroke-width="5" opacity=".8"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated handheld gaming device</title>
+  <desc id="desc">A simple original handheld gaming icon.</desc>
+  <rect width="640" height="420" rx="28" fill="#0f1d16"/>
+  <rect x="74" y="124" width="488" height="196" rx="64" fill="#14231b" stroke="#8ee85f" stroke-width="14"/>
+  <rect x="205" y="154" width="230" height="136" rx="16" fill="#07100c" stroke="#314934" stroke-width="8"/>
+  <path d="M120 224h70m-35-35v70" stroke="#dcefd3" stroke-linecap="round" stroke-width="18"/>
+  <circle cx="492" cy="197" r="17" fill="#e7bd5e"/>
+  <circle cx="456" cy="236" r="17" fill="#75c7ff"/>
+  <path d="M242 199h152m-94 42h94" stroke="#8ee85f" stroke-linecap="round" stroke-width="10"/>
+</svg>

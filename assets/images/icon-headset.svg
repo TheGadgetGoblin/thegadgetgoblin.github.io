@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated gaming headset</title>
+  <desc id="desc">A simple original headset icon for audio gear cards.</desc>
+  <rect width="640" height="420" rx="28" fill="#0f1d16"/>
+  <path d="M165 202c0-94 71-154 155-154s155 60 155 154" fill="none" stroke="#e7bd5e" stroke-linecap="round" stroke-width="28"/>
+  <rect x="92" y="194" width="124" height="168" rx="44" fill="#14231b" stroke="#8ee85f" stroke-width="16"/>
+  <rect x="424" y="194" width="124" height="168" rx="44" fill="#14231b" stroke="#8ee85f" stroke-width="16"/>
+  <path d="M452 346c-23 42-63 63-121 63h-52" fill="none" stroke="#dcefd3" stroke-linecap="round" stroke-width="18"/>
+  <circle cx="268" cy="409" r="18" fill="#e7bd5e"/>
+</svg>
