@@ -89,6 +89,16 @@ imageUrl
 imageAlt
 ```
 
+When `imageUrl` is filled on a guide pick, the static review page will show that image automatically in the top-pick card after `node scripts/build-reviews.js` is run. Until an allowed product image is available, keep the safe local placeholder image in place.
+
+Recommended local path pattern:
+
+```text
+assets/images/products/product-slug-or-model-name.webp
+```
+
+Use descriptive `imageAlt` text that names the exact product model. Never use Amazon retail-page images unless they come through an approved Amazon Associates/API method after approval.
+
 ## 6. Replace Affiliate Links Later
 
 Current links are non-tagged search links or official product pages.

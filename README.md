@@ -143,6 +143,8 @@ In GitHub, confirm Pages is set to deploy from:
 
 ## Monetization Checklist
 
+Use `MONETIZATION_SETUP.md` to track MailerLite, Google AdSense, and Amazon Associates setup.
+
 - Replace every non-tagged retailer/search URL with an approved affiliate URL when ready.
 - Confirm disclosures appear near affiliate-heavy sections.
 - Review the Affiliate Disclosure page.

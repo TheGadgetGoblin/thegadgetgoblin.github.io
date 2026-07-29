@@ -72,11 +72,15 @@
     return `<span class="score" style="--score-value:${safeScore}; --score-color:${color}"><span class="score-meter" aria-hidden="true"><span></span></span>${safeScore}/100</span>`;
   }
 
+  function shortText(value, max = 118) {
+    const text = String(value || "").trim();
+    return text.length > max ? `${text.slice(0, max - 1).trim()}...` : text;
+  }
+
   function cardMarkup(product) {
     const tags = [
       reviewTypeLabels[product.reviewType] || product.reviewType,
       product.productSelectionStatus === "research-outline" ? "Research outline" : "",
-      product.specs?.priceTier,
       product.category
     ].filter(Boolean);
     const visual = product.imageUrl
@@ -84,24 +88,25 @@
       : `<span>${escapeHtml(product.category)}</span>`;
     return `
       <article class="product-card" id="${escapeHtml(product.slug)}">
-        <a href="${productUrl(product)}">
+        <button class="product-card-button" type="button" data-product-slug="${escapeHtml(product.slug)}" aria-label="Open details for ${escapeHtml(product.title)}">
           <div class="product-visual ${product.imageUrl ? "has-image" : ""}">${visual}</div>
           <div class="product-body">
-            <div class="meta-row">${tags.map((tag) => `<span class="meta-pill">${escapeHtml(tag)}</span>`).join("")}</div>
+            <div class="meta-row">${tags.slice(0, 2).map((tag) => `<span class="meta-pill">${escapeHtml(tag)}</span>`).join("")}</div>
             <h3>${escapeHtml(product.title)}</h3>
-            <p>${escapeHtml(product.shortDescription)}</p>
+            <p>${escapeHtml(shortText(product.shortDescription))}</p>
             <div class="score-row">${scoreMarkup(product.goblinScore)}</div>
-            <div class="affiliate-actions">
-              <span class="button secondary">See details</span>
+            <div class="product-hover" aria-hidden="true">
+              <strong>Quick look</strong>
+              <span>${escapeHtml(shortText(product.finalTake || product.quickVerdict || product.shortDescription, 96))}</span>
             </div>
           </div>
-        </a>
+        </button>
       </article>
     `;
   }
 
   function affiliateButton(product) {
-    if (!product.affiliateUrl) {
+    if (!product.readyForAffiliateLinks || !product.affiliateUrl) {
       return `<p class="affiliate-note">Buying links are intentionally omitted until the destination is reviewed.</p>`;
     }
     return `
@@ -119,6 +124,7 @@
   function renderTopPicks(product) {
     if (!product.topPicks || !product.topPicks.length) return "";
     const outlineOnly = product.productSelectionStatus === "research-outline";
+    const commercialReady = product.readyForAffiliateLinks === true;
     return `
       <h2>${outlineOnly ? "Research focus" : "Top picks"}</h2>
       ${product.selectionNote ? `<div class="disclosure-banner">${escapeHtml(product.selectionNote)}</div>` : ""}
@@ -138,7 +144,7 @@
             <ul>${renderList(pick.pros)}</ul>
             <h4>Cons</h4>
             <ul>${renderList(pick.cons)}</ul>
-            ${outlineOnly || !(pick.affiliateUrl || pick.productSourceUrl) ? `<p class="affiliate-note">No buying button is shown for this research item yet.</p>` : `<div class="affiliate-actions"><a class="button secondary" href="${escapeHtml(pick.affiliateUrl || pick.productSourceUrl)}" rel="nofollow sponsored noopener" target="_blank">Check current price</a></div>`}
+            ${commercialReady && (pick.affiliateUrl || pick.productSourceUrl) ? `<div class="affiliate-actions"><a class="button secondary" href="${escapeHtml(pick.affiliateUrl || pick.productSourceUrl)}" rel="nofollow sponsored noopener" target="_blank">Check current price</a></div>` : pick.officialProductUrl ? `<div class="affiliate-actions"><a class="button secondary" href="${escapeHtml(pick.officialProductUrl)}" rel="noopener nofollow" target="_blank">View official product</a></div>` : `<p class="affiliate-note">No buying button is shown for this research item yet.</p>`}
           </article>
         `).join("")}
       </div>
@@ -160,6 +166,109 @@
 
   function renderCards(target, products) {
     target.innerHTML = products.map(cardMarkup).join("");
+  }
+
+  function pickImage(pick, product) {
+    return assetUrl(pick.imageUrl || product.imageUrl || "assets/images/gadget-goblin-logo.svg");
+  }
+
+  function renderDealComparison(target, products) {
+    const headsetGuide = products.find((product) => product.slug === "budget-gaming-headsets-under-50");
+    if (!headsetGuide?.topPicks?.length) {
+      target.innerHTML = "<p>Comparison data is not available yet.</p>";
+      return;
+    }
+
+    target.innerHTML = headsetGuide.topPicks.map((pick) => `
+      <article class="compare-card">
+        <img src="${escapeHtml(pickImage(pick, headsetGuide))}" alt="${escapeHtml(pick.imageAlt || headsetGuide.imageAlt || pick.productName)}" width="160" height="110">
+        <div>
+          <p class="eyebrow">${escapeHtml(pick.pickLabel || pick.slot || "Pick")}</p>
+          <h3>${escapeHtml(pick.productName || pick.name)}</h3>
+          <p>${escapeHtml(shortText(pick.why, 120))}</p>
+          <dl>
+            <div><dt>Best for</dt><dd>${escapeHtml(shortText(pick.bestFor, 92))}</dd></div>
+            <div><dt>Avoid if</dt><dd>${escapeHtml(shortText(pick.avoidIf || pick.watchOut, 92))}</dd></div>
+          </dl>
+        </div>
+      </article>
+    `).join("");
+  }
+
+  function setupProductModal(products) {
+    if (!products.length || document.querySelector(".product-modal")) return;
+
+    const modal = document.createElement("div");
+    modal.className = "product-modal";
+    modal.hidden = true;
+    modal.innerHTML = `
+      <div class="product-modal-backdrop" data-modal-close></div>
+      <section class="product-modal-panel" role="dialog" aria-modal="true" aria-labelledby="product-modal-title" tabindex="-1">
+        <button class="product-modal-close" type="button" data-modal-close aria-label="Close details">Close</button>
+        <div data-modal-content></div>
+      </section>
+    `;
+    document.body.appendChild(modal);
+
+    const content = modal.querySelector("[data-modal-content]");
+    const panel = modal.querySelector(".product-modal-panel");
+
+    function closeModal() {
+      modal.hidden = true;
+      document.body.classList.remove("modal-open");
+    }
+
+    function openModal(product) {
+      const image = product.imageUrl
+        ? `<img src="${escapeHtml(assetUrl(product.imageUrl))}" alt="${escapeHtml(product.imageAlt || product.name)}" width="640" height="420">`
+        : "";
+      const bestFor = (product.bestFor || []).slice(0, 3).map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join("");
+      const avoidIf = (product.avoidIf || []).slice(0, 2).map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join("");
+      const priceNote = product.productSelectionStatus === "research-outline"
+        ? "Buying links are omitted until final products and destinations are reviewed."
+        : product.readyForAffiliateLinks
+          ? "Verify exact model, seller, warranty, and price before buying."
+          : "Buying links are omitted until affiliate destinations are reviewed.";
+      content.innerHTML = `
+        <div class="product-modal-grid">
+          <div class="product-modal-art">${image}</div>
+          <div>
+            <p class="eyebrow">${escapeHtml(product.category)}</p>
+            <h2 id="product-modal-title">${escapeHtml(product.title)}</h2>
+            <p>${escapeHtml(product.quickVerdict || product.shortDescription)}</p>
+            <div class="score-row">${scoreMarkup(product.goblinScore)}</div>
+            <h3>Best for</h3>
+            <div class="tag-list">${bestFor}</div>
+            <h3>Avoid if</h3>
+            <div class="tag-list">${avoidIf}</div>
+            <p class="affiliate-note">${escapeHtml(priceNote)}</p>
+            <div class="button-row">
+              <a class="button primary" href="${escapeHtml(productUrl(product))}">Read guide</a>
+              ${product.readyForAffiliateLinks && product.affiliateUrl ? `<a class="button secondary" href="${escapeHtml(product.affiliateUrl)}" rel="nofollow sponsored noopener" target="_blank">Check current price</a>` : ""}
+            </div>
+          </div>
+        </div>
+      `;
+      modal.hidden = false;
+      document.body.classList.add("modal-open");
+      panel.focus();
+    }
+
+    document.addEventListener("click", (event) => {
+      const cardButton = event.target.closest("[data-product-slug]");
+      if (cardButton) {
+        const product = products.find((item) => item.slug === cardButton.dataset.productSlug);
+        if (product) openModal(product);
+        return;
+      }
+      if (event.target.closest("[data-modal-close]")) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !modal.hidden) closeModal();
+    });
   }
 
   function renderComparisonRows(target, products) {
@@ -306,7 +415,7 @@
 
     let products = [];
     try {
-      const response = await fetch(`${root}data/products.json?v=20260527-4`, { cache: "no-store" });
+      const response = await fetch(`${root}data/products.json?v=20260729-1`, { cache: "no-store" });
       products = await response.json();
     } catch (error) {
       targets.forEach((target) => {
@@ -319,7 +428,7 @@
       const type = target.dataset.render;
       if (type === "featured-deals") renderCards(target, products.filter((product) => product.reviewType === "deal-analysis").slice(0, 3));
       if (type === "latest-reviews") renderCards(target, products.slice(0, 3));
-      if (type === "deal-products") renderCards(target, products.filter((product) => product.reviewType === "deal-analysis" || product.specs?.priceTier?.includes("Under")).slice(0, 6));
+      if (type === "deal-comparison") renderDealComparison(target, products);
       if (type === "comparison-products") renderCards(target, products.filter((product) => product.reviewType === "comparison").concat(products.slice(0, 2)));
       if (type === "comparison-rows") renderComparisonRows(target, products);
       if (type === "category-products") {
@@ -329,6 +438,7 @@
     });
 
     document.querySelectorAll("[data-review-slug]").forEach((target) => renderReview(target, products));
+    setupProductModal(products);
     setupFilters(products);
   }
 

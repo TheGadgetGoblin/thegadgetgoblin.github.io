@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const SITE_URL = "https://thegadgetgoblin.github.io";
-const ASSET_VERSION = "20260603-1";
+const ASSET_VERSION = "20260729-1";
 const ROOT = path.resolve(__dirname, "..");
 const DATA_PATH = path.join(ROOT, "data", "products.json");
 const REVIEWS_DIR = path.join(ROOT, "reviews");
@@ -27,6 +27,10 @@ function escapeHtml(value) {
 
 function jsonLd(value) {
   return JSON.stringify(value, null, 2).replace(/<\/script/gi, "<\\/script");
+}
+
+function cleanGeneratedHtml(value) {
+  return value.replace(/[ \t]+$/gm, "").trimEnd() + "\n";
 }
 
 function absolute(pathname) {
@@ -80,9 +84,11 @@ function sourceLink(url, label) {
   return `<a href="${escapeHtml(url)}" rel="noopener nofollow" target="_blank">${escapeHtml(label || url)}</a>`;
 }
 
-function linkForPick(pick) {
-  if (pick.productSourceUrl) return externalLink(pick.productSourceUrl, "Check current price", "button secondary");
-  if (pick.officialProductUrl) return externalLink(pick.officialProductUrl, "View product", "button secondary");
+function linkForPick(pick, commercialReady = false) {
+  if (commercialReady && pick.productSourceUrl) return externalLink(pick.productSourceUrl, "Check current price", "button secondary");
+  if (pick.officialProductUrl) {
+    return `<a class="button secondary" href="${escapeHtml(pick.officialProductUrl)}" rel="noopener nofollow" target="_blank">View official product</a>`;
+  }
   return "";
 }
 
@@ -151,7 +157,7 @@ function header(product) {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Reviews",
+        name: "Gear Library",
         item: `${SITE_URL}/reviews.html`
       },
       {
@@ -180,7 +186,7 @@ function header(product) {
   <meta property="article:published_time" content="${escapeHtml(product.datePublished)}T00:00:00-06:00">
   <meta property="article:modified_time" content="${escapeHtml(product.dateUpdated)}T00:00:00-06:00">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=${ASSET_VERSION}">
   <script type="application/ld+json">${jsonLd(articleSchema)}</script>
   <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
 </head>`;
@@ -196,10 +202,9 @@ function siteHeader() {
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-      <a href="../reviews.html">Reviews</a>
+      <a href="../reviews.html">Gear Library</a>
       <a href="../deals.html">Deals</a>
-      <a href="../best-lists.html">Best Lists</a>
-      <a href="../comparisons.html">Comparisons</a>
+      <a href="../best-lists.html">Guides</a>
       <a href="../about.html">About</a>
     </nav>
   </header>`;
@@ -249,7 +254,7 @@ function comparisonTable(product) {
                 <td>${escapeHtml(pick.bestFor || "Specific use case to compare.")}</td>
                 <td>${escapeHtml(pick.avoidIf || pick.watchOut || "Verify tradeoffs before buying.")}</td>
                 <td>${escapeHtml(pick.lastCheckedDate || product.lastCheckedDate)}</td>
-                <td>${linkForPick(pick) || '<span class="affiliate-note">No buying link yet</span>'}</td>
+                <td>${linkForPick(pick, product.readyForAffiliateLinks === true) || '<span class="affiliate-note">No buying link yet</span>'}</td>
               </tr>`).join("\n");
   return `<h2>Top picks comparison</h2>
         <div class="table-wrap comparison-table">
@@ -272,10 +277,15 @@ function comparisonTable(product) {
 function pickCards(product) {
   if (!product.topPicks || !product.topPicks.length) return "";
   const outlineOnly = product.productSelectionStatus === "research-outline";
+  const commercialReady = product.readyForAffiliateLinks === true;
+  const pickImage = (pick) => nestedAsset(pick.imageUrl || product.imageUrl || "assets/images/gadget-goblin-logo.svg");
   return `<h2>${outlineOnly ? "What this guide will compare" : "Why these picks made the shortlist"}</h2>
         <div class="article-grid pick-grid">
           ${product.topPicks.map((pick) => `
           <article class="article-card pick-card">
+            <figure class="pick-card-visual">
+              <img src="${escapeHtml(pickImage(pick))}" alt="${escapeHtml(pick.imageAlt || product.imageAlt || pick.productName || pick.name || "Product placeholder image")}" width="320" height="210">
+            </figure>
             <p class="eyebrow">${escapeHtml(pick.pickLabel || pick.slot || "Research focus")}</p>
             <h3>${escapeHtml(pick.productName || pick.name)}</h3>
             <p>${escapeHtml(pick.why || "This slot needs current specs, support details, and tradeoff checks before a final recommendation.")}</p>
@@ -287,7 +297,7 @@ function pickCards(product) {
               <section><h4>Pros</h4><ul>${renderList(pick.pros)}</ul></section>
               <section><h4>Cons</h4><ul>${renderList(pick.cons)}</ul></section>
             </div>
-            ${outlineOnly ? `<p class="affiliate-note">No buying button is shown because this product slot is not final.</p>` : `<div class="affiliate-actions">${linkForPick(pick) || '<span class="affiliate-note">Retailer link needs review</span>'}</div>`}
+            ${outlineOnly && !pick.officialProductUrl ? `<p class="affiliate-note">No buying button is shown because this product slot is not final.</p>` : `<div class="affiliate-actions">${linkForPick(pick, commercialReady) || '<span class="affiliate-note">Retailer link needs review</span>'}</div>`}
           </article>`).join("\n")}
         </div>`;
 }
@@ -300,7 +310,7 @@ function outlineBlock(product) {
 }
 
 function buyingLink(product) {
-  if (product.productSelectionStatus === "research-outline") {
+  if (!product.readyForAffiliateLinks || product.productSelectionStatus === "research-outline") {
     return `<p class="affiliate-note">Buying links are omitted until final products and destinations are reviewed.</p>`;
   }
   if (!product.affiliateUrl) {
@@ -396,6 +406,6 @@ ${siteHeader()}
 fs.mkdirSync(REVIEWS_DIR, { recursive: true });
 for (const product of products) {
   const outputPath = path.join(REVIEWS_DIR, `${product.slug}.html`);
-  fs.writeFileSync(outputPath, page(product));
+  fs.writeFileSync(outputPath, cleanGeneratedHtml(page(product)));
   console.log(`Wrote ${path.relative(ROOT, outputPath)}`);
 }
